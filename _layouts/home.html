@@ -7,7 +7,7 @@ layout: default
     <p>{{ site.description }}</p>
     <div class="team-members">
       {% for member in site.team_members %}
-        <span class="team-member">{{ member }}</span>
+        <span class="team-member team-color-{{ forloop.index }}">{{ member }}</span>
       {% endfor %}
     </div>
   </header>

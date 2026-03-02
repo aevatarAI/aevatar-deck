@@ -12,7 +12,7 @@ type: plan
 
 ---
 
-## 1. Paper Ingestion Agent
+## 1. Paper Ingestion Agent <span class="owner-tag">@Shining</span>
 
 **Aevatar Mainnet** · Due Friday 3/6
 
@@ -66,7 +66,7 @@ Enter research topic...
 
 ---
 
-## 2. Context Size Solution
+## 2. Context Size Solution <span class="owner-tag">@Shining</span>
 
 **Aevatar Mainnet** · Due Friday 3/6
 
@@ -78,7 +78,7 @@ Full-graph context overflow is resolved; automated follow-up research sessions r
 
 ---
 
-## 3. Argo CD Auto Deployment Pipeline
+## 3. Argo CD Auto Deployment Pipeline <span class="owner-tag">@Shining</span>
 
 **DevOps** · Due Friday 3/6
 
@@ -90,7 +90,7 @@ Argo CD pipelines are operational for Aevatar, DAG, Notification, and Storage se
 
 ---
 
-## 4. Mobile Permission Management
+## 4. Mobile Permission Management <span class="owner-tag">@Shining</span>
 
 **NyxID** · Due Friday 3/6
 
@@ -102,7 +102,7 @@ Permission management for NyxID mobile app is production-ready and merged.
 
 ---
 
-## 5. User Workflow Upload
+## 5. User Workflow Upload <span class="owner-tag">@Shining</span>
 
 **Aevatar Mainnet** · Due Friday 3/6
 

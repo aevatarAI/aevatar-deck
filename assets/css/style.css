@@ -97,52 +97,18 @@ body:not(.reveal *) {
   font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 1px;
-  text-transform: capitalize;
+  text-transform: none !important;
   padding: 0.3rem 0.75rem;
   border-radius: 2px;
 }
 
-.team-member:nth-child(1) {
-  color: #00f0ff;
-  border: 1px solid rgba(0, 240, 255, 0.3);
-  background: rgba(0, 240, 255, 0.08);
-}
-
-.team-member:nth-child(2) {
-  color: #ff00aa;
-  border: 1px solid rgba(255, 0, 170, 0.3);
-  background: rgba(255, 0, 170, 0.08);
-}
-
-.team-member:nth-child(3) {
-  color: #b44aff;
-  border: 1px solid rgba(180, 74, 255, 0.3);
-  background: rgba(180, 74, 255, 0.08);
-}
-
-.team-member:nth-child(4) {
-  color: #39ff14;
-  border: 1px solid rgba(57, 255, 20, 0.3);
-  background: rgba(57, 255, 20, 0.08);
-}
-
-.team-member:nth-child(5) {
-  color: #ffb700;
-  border: 1px solid rgba(255, 183, 0, 0.3);
-  background: rgba(255, 183, 0, 0.08);
-}
-
-.team-member:nth-child(6) {
-  color: #ff6b6b;
-  border: 1px solid rgba(255, 107, 107, 0.3);
-  background: rgba(255, 107, 107, 0.08);
-}
-
-.team-member:nth-child(7) {
-  color: #4ecdc4;
-  border: 1px solid rgba(78, 205, 196, 0.3);
-  background: rgba(78, 205, 196, 0.08);
-}
+.team-color-1 { color: #00f0ff; border: 1px solid rgba(0,240,255,0.3); background: rgba(0,240,255,0.08); }
+.team-color-2 { color: #ff00aa; border: 1px solid rgba(255,0,170,0.3); background: rgba(255,0,170,0.08); }
+.team-color-3 { color: #b44aff; border: 1px solid rgba(180,74,255,0.3); background: rgba(180,74,255,0.08); }
+.team-color-4 { color: #39ff14; border: 1px solid rgba(57,255,20,0.3); background: rgba(57,255,20,0.08); }
+.team-color-5 { color: #ffb700; border: 1px solid rgba(255,183,0,0.3); background: rgba(255,183,0,0.08); }
+.team-color-6 { color: #ff6b6b; border: 1px solid rgba(255,107,107,0.3); background: rgba(255,107,107,0.08); }
+.team-color-7 { color: #4ecdc4; border: 1px solid rgba(78,205,196,0.3); background: rgba(78,205,196,0.08); }
 
 /* ── Week groups ── */
 .week-group {
@@ -259,6 +225,22 @@ body:not(.reveal *) {
   border: 1px solid rgba(255, 0, 170, 0.3);
   background: rgba(255, 0, 170, 0.08);
   text-shadow: 0 0 8px rgba(255, 0, 170, 0.3);
+}
+
+/* ── Owner tags ── */
+.reveal .owner-tag {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.45em;
+  font-weight: 600;
+  color: #ffb700;
+  background: rgba(255, 183, 0, 0.1);
+  border: 1px solid rgba(255, 183, 0, 0.3);
+  border-radius: 2px;
+  padding: 0.15em 0.5em;
+  margin-left: 0.5em;
+  vertical-align: middle;
+  text-transform: none !important;
+  letter-spacing: 0;
 }
 
 /* ── Deck presentation overrides ── */
