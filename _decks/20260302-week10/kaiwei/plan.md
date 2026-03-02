@@ -17,7 +17,7 @@ member: Kai Wei
 
 **Sisyphus Infrastructure** · Due Friday 3/6
 
-CI/CD pipeline configured and tested for all four Sisyphus services (API, Web, DAG, Maker) enabling single-trigger deployments with zero manual steps.
+CI/CD pipeline configured and tested for all fix Sisyphus services (API, Web, graph, notification, storage) enabling single-trigger deployments with zero manual steps.
 
 - Each service deploys to staging via a single pipeline trigger
 - Zero manual steps required in the deployment process
@@ -26,20 +26,7 @@ CI/CD pipeline configured and tested for all four Sisyphus services (API, Web, D
 
 ---
 
-## 2. Zero Trust Security Assessment
-
-**NyxID Platform** · Due Friday 3/6
-
-Written assessment document evaluating Zero Trust architecture options for NyxID, identifying current security gaps and recommending a prioritized path forward.
-
-- At least 3 Zero Trust frameworks evaluated
-- Gap analysis of current NyxID security posture completed
-- Prioritized recommendation list with estimated effort delivered
-- Directly supports security compliance goals
-
----
-
-## 3. Mobile App Permission Management
+## 2. Mobile App Permission Management
 
 **NyxID Mobile** · Due Friday 3/6
 
@@ -49,3 +36,16 @@ UI/UX design spec and technical architecture for permission management in the Ny
 - At least 1 working API endpoint for permission CRUD operations deployed to dev
 - Permission data model implemented
 - Strengthens security compliance and supports mobile platform adoption
+
+---
+
+## 3. Apple Login Integration
+
+**NyxID Platform** · Due Friday 3/6
+
+Full Apple Sign-In integration for the NyxID platform, enabling users to authenticate with their Apple ID end-to-end.
+
+- Apple Sign-In login flow fully functional (redirect, auth callback, token exchange)
+- Server-side token verification and user account creation/linking implemented
+- Frontend login button wired up and working in staging environment
+- Supports user adoption by offering a trusted, frictionless sign-in option
