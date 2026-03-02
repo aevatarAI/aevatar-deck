@@ -13,7 +13,7 @@ member: Kaihuei
 
 ---
 
-## 1. 池子服务多账号上线并通过全员并发压测
+## 1. 池子服务多账号上线并完成压测
 
 <div class="slide-meta"><span class="owner-tag">@Kaihuei</span> · <strong>Pool Service</strong> · Due Friday 3/6</div>
 
@@ -45,7 +45,7 @@ member: Kaihuei
 
 - 接入夜莺监控平台，配置 SoulGarden Dashboard
 - Dashboard 展示 ≥ 4 项核心指标（CPU、内存、QPS、错误率）
-- 配置 ≥ 1 条告警规则并通过触发测试
+- 配置 ≥ 3 条告警规则并通过触发测试
 
 ---
 
