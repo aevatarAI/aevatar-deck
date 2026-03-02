@@ -61,7 +61,7 @@ member: Kaihuei
 
 ---
 
-## 5. Aetherlink 节点上线
+## 5. Aetherlink Oracle 节点搭建与上线
 
 <div class="slide-meta"><span class="owner-tag">@Kaihuei</span> · <strong>Aetherlink</strong> · Due Friday 3/6</div>
 
