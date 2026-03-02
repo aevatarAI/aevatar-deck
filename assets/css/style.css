@@ -232,7 +232,8 @@ body:not(.reveal *) {
   font-family: 'Rajdhani', sans-serif;
   font-size: 0.45em;
   font-weight: 600;
-  color: #ffb700;
+  color: #ffb700 !important;
+  -webkit-text-fill-color: #ffb700 !important;
   background: rgba(255, 183, 0, 0.1);
   border: 1px solid rgba(255, 183, 0, 0.3);
   border-radius: 2px;
@@ -241,6 +242,8 @@ body:not(.reveal *) {
   vertical-align: middle;
   text-transform: none !important;
   letter-spacing: 0;
+  text-shadow: none !important;
+  display: inline-block;
 }
 
 /* ── Deck presentation overrides ── */
