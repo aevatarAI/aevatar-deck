@@ -90,42 +90,7 @@ Enter research topic...
 
 ---
 
-## 3. Argo CD Auto Deployment
-
-<div class="slide-meta"><span class="owner-tag">@Shining</span> · <strong>DevOps</strong> · Due Friday 3/6</div>
-
-<div class="slide-section-label">Description</div>
-
-- Argo CD pipelines for Aevatar, DAG, Notification, Storage on staging
-- App manifests + Git-based sync on merge to main
-- Health checks and rollback policies
-
-<div class="slide-section-label">Quality Gate</div>
-
-- 4 services deployed via Argo CD on staging
-- Deploy time < 10 min per service
-- Rollback tested on ≥1 service
-
----
-
-## 4. Mobile Permission Management
-
-<div class="slide-meta"><span class="owner-tag">@Shining</span> · <strong>NyxID</strong> · Due Friday 3/6</div>
-
-<div class="slide-section-label">Description</div>
-
-- CRUD flows for permission groups + RBAC integration
-- Handles offline, conflicts, role inheritance
-
-<div class="slide-section-label">Quality Gate</div>
-
-- QA pass with 0 blocking bugs
-- Merged to main
-- Matches Figma specs
-
----
-
-## 5. User Workflow Upload
+## 3. User Workflow Upload
 
 <div class="slide-meta"><span class="owner-tag">@Shining</span> · <strong>Aevatar Mainnet</strong> · Due Friday 3/6</div>
 
