@@ -17,25 +17,19 @@ member: Shining
 
 <div class="slide-meta"><span class="owner-tag">@Shining</span> · <strong>Aevatar Mainnet</strong> · Due Friday 3/6</div>
 
-Workflow G agent is merged to main and successfully parses PDF and TeX research papers into DAG nodes.
+Workflow G agent parses PDF + TeX papers into DAG nodes.
 
-- Parse PDF papers via layout-aware extraction
-- Parse TeX papers via source-level AST parsing
-- Map extracted sections, claims, and references into DAG nodes
-- Supports mainnet product completeness — unlocks automated research input pipeline for end users
-
-***
+- PDF layout-aware extraction + TeX AST parsing
+- Extracted sections/claims mapped to DAG nodes
 
 <div class="slide-section-label">Quality Gate</div>
 
 - PR merged to main
-- ≥3 sample papers (PDF + TeX) ingested end-to-end with 100 % DAG node creation success rate
-- All extracted DAG nodes contain valid title, content, and source-reference fields
-- No regressions on existing workflow tests
+- ≥3 papers ingested with 100% DAG node success rate
 
 ***
 
-### Current — Workflow Research UI
+### Current UI
 
 ![Current Workflow UI]({{ '/assets/images/current-workflow-ui.png' | relative_url }})
 
@@ -65,9 +59,9 @@ Drop PDF or TeX files here<br>or click to browse
 </div>
 <div style="flex: 1.5; background: #1a1a2e; border: 1px solid rgba(0,240,255,0.2); border-radius: 6px; padding: 1rem;">
 <div style="color: #00f0ff; font-weight: 700; margin-bottom: 0.5rem;">🔬 Research Session</div>
-<div style="color: #e0e0f0; margin-bottom: 0.5rem;">Knowledge graph populated from ingested papers. Research agent can now reference extracted claims and findings.</div>
+<div style="color: #e0e0f0; margin-bottom: 0.5rem;">Knowledge graph populated from ingested papers.</div>
 <div style="background: #12121a; border-radius: 4px; padding: 0.8rem; margin-bottom: 0.5rem;">
-<span style="color: #b44aff;">Agent:</span> <span style="color: #e0e0f0;">Found 3 related claims from ingested papers about transformer scaling laws...</span>
+<span style="color: #b44aff;">Agent:</span> <span style="color: #e0e0f0;">Found 3 related claims about transformer scaling laws...</span>
 </div>
 <div style="background: #0a0a0f; border: 1px solid rgba(0,240,255,0.15); border-radius: 4px; padding: 0.5rem; color: #6a6a8a;">
 Enter research topic...
@@ -81,43 +75,33 @@ Enter research topic...
 
 <div class="slide-meta"><span class="owner-tag">@Shining</span> · <strong>Aevatar Mainnet</strong> · Due Friday 3/6</div>
 
-Full-graph context overflow is resolved; automated follow-up research sessions run without context limit failures.
+Resolve full-graph context overflow so research sessions don't fail on large graphs.
 
-- Implement sliding-window or summarization strategy for large graphs
-- Agent receives pruned context that preserves key claims and structure
-- Automated follow-up sessions complete without context limit errors
-- Improves platform stability and user retention
-
-***
+- Sliding-window / summarization for large graphs
+- Follow-up sessions complete without context errors
 
 <div class="slide-section-label">Quality Gate</div>
 
-- Technical design doc reviewed and approved
-- Prototype passes on a graph with ≥50 nodes without exceeding context limit
-- Research session failure rate reduced from current baseline to <5 %
-- No degradation in answer quality vs. small-graph baseline
+- Design doc approved
+- Passes on graph with ≥50 nodes
+- Session failure rate < 5%
 
 ---
 
-## 3. Argo CD Auto Deployment Pipeline
+## 3. Argo CD Auto Deployment
 
 <div class="slide-meta"><span class="owner-tag">@Shining</span> · <strong>DevOps</strong> · Due Friday 3/6</div>
 
-Argo CD pipelines are operational for Aevatar, DAG, Notification, and Storage services on staging.
+Argo CD pipelines operational for Aevatar, DAG, Notification, Storage on staging.
 
-- Configure Argo CD application manifests for all 4 services
-- Set up Git-based sync with auto-deploy on merge to main
-- Add health checks and rollback policies per service
-- Reduces manual ops cost and deployment errors — supports developer velocity
-
-***
+- App manifests + Git-based sync on merge to main
+- Health checks and rollback policies
 
 <div class="slide-section-label">Quality Gate</div>
 
-- All 4 services deployed and verified via Argo CD on staging
-- Average deployment time <10 min per service
-- Rollback successfully tested on at least 1 service
-- Runbook documented for on-call engineers
+- 4 services deployed via Argo CD on staging
+- Deploy time < 10 min per service
+- Rollback tested on ≥1 service
 
 ---
 
@@ -125,21 +109,16 @@ Argo CD pipelines are operational for Aevatar, DAG, Notification, and Storage se
 
 <div class="slide-meta"><span class="owner-tag">@Shining</span> · <strong>NyxID</strong> · Due Friday 3/6</div>
 
-Permission management for NyxID mobile app is production-ready and merged.
+Permission management for NyxID mobile is production-ready.
 
-- Implement create, read, update, delete flows for permission groups
-- Integrate with backend RBAC API
-- Handle edge cases: offline state, permission conflicts, role inheritance
-- Unblocks NyxID mobile launch — supports user conversion funnel
-
-***
+- CRUD flows for permission groups + RBAC integration
+- Handles offline, conflicts, role inheritance
 
 <div class="slide-section-label">Quality Gate</div>
 
-- All permission CRUD flows pass QA with 0 blocking bugs
-- Code reviewed and merged to main
-- UI matches approved Figma specs with ≤2 minor deviations
-- Permission changes reflected in real-time without app restart
+- QA pass with 0 blocking bugs
+- Merged to main
+- Matches Figma specs
 
 ---
 
@@ -147,18 +126,13 @@ Permission management for NyxID mobile app is production-ready and merged.
 
 <div class="slide-meta"><span class="owner-tag">@Shining</span> · <strong>Aevatar Mainnet</strong> · Due Friday 3/6</div>
 
-Users can upload and execute custom workflows on mainnet staging.
+Users upload and execute custom workflows on mainnet staging.
 
-- Build upload endpoint with file validation and versioning
-- Wire upload → parse → execute pipeline end-to-end
-- Surface execution status and results in the UI
-- Core platform feature for user acquisition and ecosystem expansion — tied to ARR growth
-
-***
+- Upload endpoint with validation + versioning
+- Upload → parse → execute pipeline e2e
 
 <div class="slide-section-label">Quality Gate</div>
 
-- Upload → execute flow verified end-to-end on staging
-- ≥2 test workflows uploaded and executed successfully
-- Invalid workflow uploads rejected with clear error messages
-- Execution logs accessible to the uploading user
+- E2e verified on staging
+- ≥2 workflows uploaded and executed
+- Invalid uploads rejected with clear errors
