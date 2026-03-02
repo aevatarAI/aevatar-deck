@@ -38,8 +38,6 @@ member: louis
 - 设计文档通过 review 并落地
 - 改造 PR merged，各关键服务接入统一 metrics
 - 最小观测面板可访问，展示链路与关键错误视图
-- 提升 aevatar 项目 Observability 能力，增强系统稳定性
-
 ***
 
 <div class="slide-section-label">战略对齐</div>
@@ -75,8 +73,6 @@ member: louis
 - 设计文档通过 review，改造 PR merged
 - 关键链路中 trace_id  可端到端透传
 - 5 分钟以内完成从发现问题到定位问题（含日志/Trace 截图验证）
-- 提升 aevatar Traceability 能力，快速定位问题，增强系统稳定性
-
 ***
 
 <div class="slide-section-label">战略对齐</div>
