@@ -16,6 +16,13 @@ defaults:
       layout: "deck"
       author: "Aevatar Team"
 
+team_members:
+  - Shining
+  - Ean
+  - Louis
+  - Potter
+  - Haylee
+
 future: true
 
 plugins:

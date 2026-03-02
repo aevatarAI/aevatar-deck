@@ -84,6 +84,28 @@ body:not(.reveal *) {
   letter-spacing: 1px;
 }
 
+/* ── Team members ── */
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.25rem;
+}
+
+.team-member {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 0.3rem 0.75rem;
+  border: 1px solid rgba(180, 74, 255, 0.3);
+  border-radius: 2px;
+  background: rgba(180, 74, 255, 0.08);
+  color: var(--color-neon-purple);
+  text-shadow: 0 0 8px rgba(180, 74, 255, 0.2);
+}
+
 /* ── Week groups ── */
 .week-group {
   margin-bottom: 2.5rem;
