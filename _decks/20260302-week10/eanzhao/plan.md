@@ -13,22 +13,22 @@ member: Eanzhao
 
 ---
 
-## 1. 通用型交付
+## 1. 通用型交付 (Claw 化与本地部署)
 
 <div class="slide-meta"><span class="owner-tag">@Eanzhao</span> · <strong>通用型</strong> · Due Friday 3/6 18:00</div>
 
-本周五之前交付能够跑通的平台核心能力验证环境、渠道引导说明和部署维护文档，并且完成系统演示。
+本周五之前交付能够跑通的 Aevatar Localnet 核心能力验证环境与渠道连接指引，推动系统向 Claw 架构演进，并帮助运营侧实现在本地独立运转独立业务。
 
-- 配置验证完整的运营可用渠道
-- 按文档可以在本地环境从零独立部署
-- 模拟并完成系统的版本升级与问题回滚
+- 完成系统向 Claw 化结构重构的关键配置验证
+- 重点打通并验证至少一个核心运营渠道 (Channel) 的接入
+- 支持运营人员按向导在本地独立拉起 Aevatar Localnet 进行日常调测
 
 ***
 
 <div class="slide-section-label">交付物</div>
 
-- `channel-onboarding-v1.md`（接入指引与配置说明）
-- `local-deploy-guide-v1.md`（本地环境从零到一的部署参考）
+- `channel-onboarding-v1.md`（运营渠道的 Claw 化接入指引与配置说明）
+- `localnet-deploy-guide-v1.md`（Aevatar Localnet 开箱即用的本地部署指南）
 - `update-and-rollback-runbook-v1.md`（系统更新升级及异常回滚手册）
 - 最新版本的系统功能演示
 
@@ -37,16 +37,17 @@ member: Eanzhao
 <div class="slide-section-label">验收标准</div>
 
 - 目标权重: 40%
-- 本地从零部署耗时中位数 ≤ 30 分钟
-- 从零到一完整完成一轮升级与回滚流程
+- 成功接入 1 个运营 Channel 且 50 次请求连通成功率 ≥ 95%
+- 运营人员按文档本地从零拉起 Localnet 耗时中位数 ≤ 30 分钟
+- 从零到一完整完成一轮本地环境的升级与回滚流程
 
 ***
 
 <div class="slide-section-label">战略对齐</div>
 
-- 运营侧激活转化率提升
-- 消除配置壁垒，降低交付支持成本
-- 提升系统可用性并保证运行稳定
+- 推动架构 Claw 化，提升系统灵活性与解耦能力
+- 赋能运营侧快速开展自主接入与业务尝试，降低测试对接门槛
+- 提升系统可用性并保证日常运行稳定
 
 ---
 
