@@ -15,7 +15,7 @@ member: Shining
 
 ## 1. Paper Ingestion Agent
 
-<div class="slide-meta"><span class="owner-tag">@Shining</span> · <strong>Aevatar Mainnet</strong> · Due Friday 3/6</div>
+<div class="slide-meta"><span class="weight-badge">25%</span> <span class="owner-tag">@Shining</span> · <strong>Aevatar Mainnet</strong> · Due Friday 3/6</div>
 
 <div class="slide-section-label">Description</div>
 
@@ -74,7 +74,7 @@ Enter research topic...
 
 ## 2. Context Size Solution
 
-<div class="slide-meta"><span class="owner-tag">@Shining</span> · <strong>Aevatar Mainnet</strong> · Due Friday 3/6</div>
+<div class="slide-meta"><span class="weight-badge">40%</span> <span class="owner-tag">@Shining</span> · <strong>Aevatar Mainnet</strong> · Due Friday 3/6</div>
 
 <div class="slide-section-label">Description</div>
 
@@ -90,9 +90,25 @@ Enter research topic...
 
 ---
 
-## 3. User Workflow Upload
+## 3. Auto Paper Generation
 
-<div class="slide-meta"><span class="owner-tag">@Shining</span> · <strong>Aevatar Mainnet</strong> · Due Friday 3/6</div>
+<div class="slide-meta"><span class="weight-badge">25%</span> <span class="owner-tag">@Shining</span> · <strong>Aevatar Mainnet</strong> · Due Friday 3/6</div>
+
+<div class="slide-section-label">Description</div>
+
+- Click graph node → Workflow G agent generates structured paper
+- Auto-assembles claims, evidence, and citations from DAG
+
+<div class="slide-section-label">Quality Gate</div>
+
+- Node-click → generation pipeline works e2e
+- ≥2 papers generated with correct citations
+
+---
+
+## 4. User Workflow Upload
+
+<div class="slide-meta"><span class="weight-badge">10%</span> <span class="owner-tag">@Shining</span> · <strong>Aevatar Mainnet</strong> · Due Friday 3/6</div>
 
 <div class="slide-section-label">Description</div>
 
