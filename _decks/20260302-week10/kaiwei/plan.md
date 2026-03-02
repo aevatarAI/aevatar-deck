@@ -17,7 +17,7 @@ member: Kai Wei
 
 **Sisyphus Infrastructure** · Due Friday 3/6
 
-CI/CD pipeline configured and tested for all fix Sisyphus services (API, Web, graph, notification, storage) enabling single-trigger deployments with zero manual steps.
+CI/CD pipeline configured and tested for all Sisyphus services (API, Web, graph, notification, storage) enabling single-trigger deployments with zero manual steps.
 
 - Each service deploys to staging via a single pipeline trigger
 - Zero manual steps required in the deployment process
