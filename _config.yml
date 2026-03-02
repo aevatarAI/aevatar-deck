@@ -1,7 +1,7 @@
 title: Aevatar Weekly Decks
 description: Weekly progress presentations for the Aevatar team
 url: ""
-baseurl: "/aevatar-deck"
+baseurl: ""
 
 collections:
   decks:
