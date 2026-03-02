@@ -12,9 +12,9 @@ type: plan
 
 ---
 
-## 1. Paper Ingestion Agent <span class="owner-tag">@Shining</span>
+## 1. Paper Ingestion Agent
 
-**Aevatar Mainnet** · Due Friday 3/6
+<div class="slide-meta"><span class="owner-tag">@Shining</span> · <strong>Aevatar Mainnet</strong> · Due Friday 3/6</div>
 
 Workflow G agent is merged to main and successfully parses PDF and TeX research papers into DAG nodes.
 
@@ -66,9 +66,9 @@ Enter research topic...
 
 ---
 
-## 2. Context Size Solution <span class="owner-tag">@Shining</span>
+## 2. Context Size Solution
 
-**Aevatar Mainnet** · Due Friday 3/6
+<div class="slide-meta"><span class="owner-tag">@Shining</span> · <strong>Aevatar Mainnet</strong> · Due Friday 3/6</div>
 
 Full-graph context overflow is resolved; automated follow-up research sessions run without context limit failures.
 
@@ -78,9 +78,9 @@ Full-graph context overflow is resolved; automated follow-up research sessions r
 
 ---
 
-## 3. Argo CD Auto Deployment Pipeline <span class="owner-tag">@Shining</span>
+## 3. Argo CD Auto Deployment Pipeline
 
-**DevOps** · Due Friday 3/6
+<div class="slide-meta"><span class="owner-tag">@Shining</span> · <strong>DevOps</strong> · Due Friday 3/6</div>
 
 Argo CD pipelines are operational for Aevatar, DAG, Notification, and Storage services on staging.
 
@@ -90,9 +90,9 @@ Argo CD pipelines are operational for Aevatar, DAG, Notification, and Storage se
 
 ---
 
-## 4. Mobile Permission Management <span class="owner-tag">@Shining</span>
+## 4. Mobile Permission Management
 
-**NyxID** · Due Friday 3/6
+<div class="slide-meta"><span class="owner-tag">@Shining</span> · <strong>NyxID</strong> · Due Friday 3/6</div>
 
 Permission management for NyxID mobile app is production-ready and merged.
 
@@ -102,9 +102,9 @@ Permission management for NyxID mobile app is production-ready and merged.
 
 ---
 
-## 5. User Workflow Upload <span class="owner-tag">@Shining</span>
+## 5. User Workflow Upload
 
-**Aevatar Mainnet** · Due Friday 3/6
+<div class="slide-meta"><span class="owner-tag">@Shining</span> · <strong>Aevatar Mainnet</strong> · Due Friday 3/6</div>
 
 Users can upload and execute custom workflows on mainnet staging.
 

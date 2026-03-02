@@ -227,23 +227,30 @@ body:not(.reveal *) {
   text-shadow: 0 0 8px rgba(255, 0, 170, 0.3);
 }
 
-/* ── Owner tags ── */
+/* ── Slide meta & owner tags ── */
+.reveal .slide-meta {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.6em;
+  color: rgba(224, 224, 240, 0.7);
+  margin-top: -0.3em;
+  margin-bottom: 0.8em;
+}
+
+.reveal .slide-meta strong {
+  color: var(--color-neon-magenta);
+}
+
 .reveal .owner-tag {
   font-family: 'Rajdhani', sans-serif;
-  font-size: 0.45em;
-  font-weight: 600;
-  color: #ffb700 !important;
-  -webkit-text-fill-color: #ffb700 !important;
+  font-size: 1em;
+  font-weight: 700;
+  color: #ffb700;
   background: rgba(255, 183, 0, 0.1);
   border: 1px solid rgba(255, 183, 0, 0.3);
   border-radius: 2px;
-  padding: 0.15em 0.5em;
-  margin-left: 0.5em;
-  vertical-align: middle;
-  text-transform: none !important;
+  padding: 0.1em 0.5em;
+  text-shadow: none;
   letter-spacing: 0;
-  text-shadow: none !important;
-  display: inline-block;
 }
 
 /* ── Deck presentation overrides ── */
