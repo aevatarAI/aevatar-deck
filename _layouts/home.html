@@ -15,17 +15,49 @@ layout: default
   <main class="deck-list">
     {% assign decks_by_week = site.decks | sort: "date" | reverse | group_by: "week" %}
     {% for week in decks_by_week %}
+      {% assign week_plans = week.items | where: "type", "plan" %}
+      {% assign week_reviews = week.items | where: "type", "review" %}
       <section class="week-group">
         <h2>{{ week.name }}</h2>
-        <ul>
-          {% for deck in week.items %}
-            <li>
-              <span class="deck-badge deck-badge--{{ deck.type }}">{{ deck.type }}</span>
-              <a href="{{ deck.url | relative_url }}">{{ deck.title }}</a>
-              <span class="deck-meta">{{ deck.author }} &middot; {{ deck.date | date: "%b %d, %Y" }}</span>
-            </li>
-          {% endfor %}
-        </ul>
+
+        {% if week_plans.size > 0 %}
+        <div class="deck-row">
+          <div class="deck-row-header" onclick="this.parentElement.classList.toggle('expanded')">
+            <span class="deck-badge deck-badge--plan">plan</span>
+            <span class="deck-row-title">Week Plan</span>
+            <span class="deck-row-count">{{ week_plans.size }} member{% if week_plans.size != 1 %}s{% endif %}</span>
+            <span class="deck-row-arrow">&#9662;</span>
+          </div>
+          <div class="deck-row-members">
+            {% for deck in week_plans %}
+              <a href="{{ deck.url | relative_url }}" class="member-link">
+                <span class="member-name">{{ deck.member }}</span>
+                <span class="member-date">{{ deck.date | date: "%b %d" }}</span>
+              </a>
+            {% endfor %}
+          </div>
+        </div>
+        {% endif %}
+
+        {% if week_reviews.size > 0 %}
+        <div class="deck-row">
+          <div class="deck-row-header" onclick="this.parentElement.classList.toggle('expanded')">
+            <span class="deck-badge deck-badge--review">review</span>
+            <span class="deck-row-title">Week Review</span>
+            <span class="deck-row-count">{{ week_reviews.size }} member{% if week_reviews.size != 1 %}s{% endif %}</span>
+            <span class="deck-row-arrow">&#9662;</span>
+          </div>
+          <div class="deck-row-members">
+            {% for deck in week_reviews %}
+              <a href="{{ deck.url | relative_url }}" class="member-link">
+                <span class="member-name">{{ deck.member }}</span>
+                <span class="member-date">{{ deck.date | date: "%b %d" }}</span>
+              </a>
+            {% endfor %}
+          </div>
+        </div>
+        {% endif %}
+
       </section>
     {% endfor %}
   </main>

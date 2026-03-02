@@ -4,6 +4,7 @@ title: "Week 10 Plan"
 date: 2026-03-02
 week: "2026-W10"
 type: plan
+member: Shining
 ---
 
 ## Week 10 Plan

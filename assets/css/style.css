@@ -128,32 +128,87 @@ body:not(.reveal *) {
   text-shadow: 0 0 20px rgba(255, 0, 170, 0.3);
 }
 
-/* ── Deck list ── */
-.deck-list ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+/* ── Deck rows (expandable) ── */
+.deck-list {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
 
-.deck-list li {
-  padding: 1rem 1.25rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 0.75rem;
+.deck-row {
   background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: 4px;
-  transition: all 0.3s ease;
-  position: relative;
   overflow: hidden;
+  margin-bottom: 0.5rem;
 }
 
-.deck-list li::before {
+.deck-row-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 1.25rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.deck-row-header:hover {
+  background: var(--color-surface-hover);
+}
+
+.deck-row-title {
+  color: var(--color-text);
+  font-weight: 600;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+}
+
+.deck-row-count {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.75rem;
+  color: var(--color-muted);
+  margin-left: auto;
+}
+
+.deck-row-arrow {
+  color: var(--color-muted);
+  font-size: 0.8rem;
+  transition: transform 0.3s ease;
+}
+
+.deck-row.expanded .deck-row-arrow {
+  transform: rotate(180deg);
+}
+
+.deck-row-members {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  border-top: 0 solid var(--color-border);
+}
+
+.deck-row.expanded .deck-row-members {
+  max-height: 500px;
+  border-top-width: 1px;
+}
+
+.member-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1.25rem 0.75rem 2.5rem;
+  text-decoration: none;
+  color: var(--color-text);
+  transition: all 0.2s ease;
+  border-bottom: 1px solid rgba(0, 240, 255, 0.05);
+  position: relative;
+}
+
+.member-link:last-child {
+  border-bottom: none;
+}
+
+.member-link::before {
   content: '';
   position: absolute;
   left: 0;
@@ -162,43 +217,34 @@ body:not(.reveal *) {
   height: 100%;
   background: var(--color-neon-cyan);
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.2s ease;
+}
+
+.member-link:hover {
+  background: var(--color-surface-hover);
+  padding-left: 2.75rem;
+}
+
+.member-link:hover::before {
+  opacity: 1;
   box-shadow: var(--glow-cyan);
 }
 
-.deck-list li:hover {
-  background: var(--color-surface-hover);
-  border-color: rgba(0, 240, 255, 0.3);
-  box-shadow: 0 0 20px rgba(0, 240, 255, 0.05);
-  transform: translateX(4px);
-}
-
-.deck-list li:hover::before {
-  opacity: 1;
-}
-
-.deck-list a {
-  color: var(--color-text);
-  text-decoration: none;
+.member-name {
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: 1rem;
   letter-spacing: 0.5px;
-  transition: color 0.2s ease;
 }
 
-.deck-list a:hover {
+.member-link:hover .member-name {
   color: var(--color-neon-cyan);
-  text-decoration: none;
-  text-shadow: 0 0 15px rgba(0, 240, 255, 0.4);
+  text-shadow: 0 0 15px rgba(0, 240, 255, 0.3);
 }
 
-.deck-meta {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 0.7rem;
+.member-date {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.75rem;
   color: var(--color-muted);
-  white-space: nowrap;
-  letter-spacing: 1px;
-  margin-left: auto;
 }
 
 /* ── Type badges ── */
