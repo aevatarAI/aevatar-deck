@@ -286,6 +286,20 @@ body:not(.reveal *) {
   color: var(--color-neon-magenta);
 }
 
+.reveal .weight-badge {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.85em;
+  font-weight: 700;
+  color: #00f0ff;
+  background: rgba(0, 240, 255, 0.1);
+  border: 1px solid rgba(0, 240, 255, 0.3);
+  border-radius: 2px;
+  padding: 0.1em 0.5em;
+  text-shadow: 0 0 8px rgba(0, 240, 255, 0.3);
+  letter-spacing: 1px;
+  margin-right: 0.5em;
+}
+
 .reveal .owner-tag {
   font-family: 'Rajdhani', sans-serif;
   font-size: 1em;
