@@ -26,6 +26,12 @@ Inbox → Detail → Approve / Deny → 后端回传。
 
 ***
 
+### 核心闭环流程示意（当前设计稿）
+
+![NyxID Mobile Simplified Flow]({{ '/assets/images/nyxid-mobile-simplified-flow.png' | relative_url }})
+
+***
+
 <div class="slide-section-label">交付物</div>
 
 - 1 条端到端可复现录屏（覆盖 Inbox → Detail → Approve / Deny → 回传）
