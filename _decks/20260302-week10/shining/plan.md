@@ -96,15 +96,13 @@ Enter research topic...
 
 <div class="slide-section-label">Description</div>
 
-- Click any node on the knowledge graph to trigger paper generation
-- Integrated with Workflow G agent to produce research paper from DAG context
-- Auto-assembles related claims, evidence, and citations into structured output
+- Click graph node → Workflow G agent generates structured paper
+- Auto-assembles claims, evidence, and citations from DAG
 
 <div class="slide-section-label">Quality Gate</div>
 
 - Node-click → generation pipeline works e2e
-- Generated paper includes correct citations from source nodes
-- ≥2 papers generated from different graph regions
+- ≥2 papers generated with correct citations
 
 ---
 
