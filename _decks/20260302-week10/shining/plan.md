@@ -17,8 +17,9 @@ member: Shining
 
 <div class="slide-meta"><span class="owner-tag">@Shining</span> · <strong>Aevatar Mainnet</strong> · Due Friday 3/6</div>
 
-Workflow G agent parses PDF + TeX papers into DAG nodes.
+<div class="slide-section-label">Description</div>
 
+- Workflow G agent parses PDF + TeX papers into DAG nodes
 - PDF layout-aware extraction + TeX AST parsing
 - Extracted sections/claims mapped to DAG nodes
 
@@ -75,9 +76,10 @@ Enter research topic...
 
 <div class="slide-meta"><span class="owner-tag">@Shining</span> · <strong>Aevatar Mainnet</strong> · Due Friday 3/6</div>
 
-Resolve full-graph context overflow so research sessions don't fail on large graphs.
+<div class="slide-section-label">Description</div>
 
-- Sliding-window / summarization for large graphs
+- Resolve full-graph context overflow for large graphs
+- Sliding-window / summarization strategy
 - Follow-up sessions complete without context errors
 
 <div class="slide-section-label">Quality Gate</div>
@@ -92,8 +94,9 @@ Resolve full-graph context overflow so research sessions don't fail on large gra
 
 <div class="slide-meta"><span class="owner-tag">@Shining</span> · <strong>DevOps</strong> · Due Friday 3/6</div>
 
-Argo CD pipelines operational for Aevatar, DAG, Notification, Storage on staging.
+<div class="slide-section-label">Description</div>
 
+- Argo CD pipelines for Aevatar, DAG, Notification, Storage on staging
 - App manifests + Git-based sync on merge to main
 - Health checks and rollback policies
 
@@ -109,7 +112,7 @@ Argo CD pipelines operational for Aevatar, DAG, Notification, Storage on staging
 
 <div class="slide-meta"><span class="owner-tag">@Shining</span> · <strong>NyxID</strong> · Due Friday 3/6</div>
 
-Permission management for NyxID mobile is production-ready.
+<div class="slide-section-label">Description</div>
 
 - CRUD flows for permission groups + RBAC integration
 - Handles offline, conflicts, role inheritance
@@ -126,8 +129,9 @@ Permission management for NyxID mobile is production-ready.
 
 <div class="slide-meta"><span class="owner-tag">@Shining</span> · <strong>Aevatar Mainnet</strong> · Due Friday 3/6</div>
 
-Users upload and execute custom workflows on mainnet staging.
+<div class="slide-section-label">Description</div>
 
+- Upload + execute custom workflows on mainnet staging
 - Upload endpoint with validation + versioning
 - Upload → parse → execute pipeline e2e
 
