@@ -19,9 +19,19 @@ member: Shining
 
 Workflow G agent is merged to main and successfully parses PDF and TeX research papers into DAG nodes.
 
+- Parse PDF papers via layout-aware extraction
+- Parse TeX papers via source-level AST parsing
+- Map extracted sections, claims, and references into DAG nodes
+- Supports mainnet product completeness — unlocks automated research input pipeline for end users
+
+***
+
+<div class="slide-section-label">Quality Gate</div>
+
 - PR merged to main
-- ≥3 sample papers (PDF + TeX) ingested end-to-end with 100% DAG node creation success rate
-- Unlocks automated research input pipeline for end users
+- ≥3 sample papers (PDF + TeX) ingested end-to-end with 100 % DAG node creation success rate
+- All extracted DAG nodes contain valid title, content, and source-reference fields
+- No regressions on existing workflow tests
 
 ***
 
@@ -73,9 +83,19 @@ Enter research topic...
 
 Full-graph context overflow is resolved; automated follow-up research sessions run without context limit failures.
 
+- Implement sliding-window or summarization strategy for large graphs
+- Agent receives pruned context that preserves key claims and structure
+- Automated follow-up sessions complete without context limit errors
+- Improves platform stability and user retention
+
+***
+
+<div class="slide-section-label">Quality Gate</div>
+
 - Technical design doc reviewed and approved
 - Prototype passes on a graph with ≥50 nodes without exceeding context limit
-- Research session failure rate reduced from baseline to <5%
+- Research session failure rate reduced from current baseline to <5 %
+- No degradation in answer quality vs. small-graph baseline
 
 ---
 
@@ -85,9 +105,19 @@ Full-graph context overflow is resolved; automated follow-up research sessions r
 
 Argo CD pipelines are operational for Aevatar, DAG, Notification, and Storage services on staging.
 
+- Configure Argo CD application manifests for all 4 services
+- Set up Git-based sync with auto-deploy on merge to main
+- Add health checks and rollback policies per service
+- Reduces manual ops cost and deployment errors — supports developer velocity
+
+***
+
+<div class="slide-section-label">Quality Gate</div>
+
 - All 4 services deployed and verified via Argo CD on staging
 - Average deployment time <10 min per service
-- Reduces manual ops cost and deployment errors
+- Rollback successfully tested on at least 1 service
+- Runbook documented for on-call engineers
 
 ---
 
@@ -97,9 +127,19 @@ Argo CD pipelines are operational for Aevatar, DAG, Notification, and Storage se
 
 Permission management for NyxID mobile app is production-ready and merged.
 
+- Implement create, read, update, delete flows for permission groups
+- Integrate with backend RBAC API
+- Handle edge cases: offline state, permission conflicts, role inheritance
+- Unblocks NyxID mobile launch — supports user conversion funnel
+
+***
+
+<div class="slide-section-label">Quality Gate</div>
+
 - All permission CRUD flows pass QA with 0 blocking bugs
 - Code reviewed and merged to main
-- Unblocks NyxID mobile launch
+- UI matches approved Figma specs with ≤2 minor deviations
+- Permission changes reflected in real-time without app restart
 
 ---
 
@@ -109,6 +149,16 @@ Permission management for NyxID mobile app is production-ready and merged.
 
 Users can upload and execute custom workflows on mainnet staging.
 
+- Build upload endpoint with file validation and versioning
+- Wire upload → parse → execute pipeline end-to-end
+- Surface execution status and results in the UI
+- Core platform feature for user acquisition and ecosystem expansion — tied to ARR growth
+
+***
+
+<div class="slide-section-label">Quality Gate</div>
+
 - Upload → execute flow verified end-to-end on staging
 - ≥2 test workflows uploaded and executed successfully
-- Core platform feature for user acquisition and ecosystem expansion
+- Invalid workflow uploads rejected with clear error messages
+- Execution logs accessible to the uploading user

@@ -299,6 +299,19 @@ body:not(.reveal *) {
   letter-spacing: 0;
 }
 
+/* ── Slide section labels ── */
+.reveal .slide-section-label {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.7em;
+  font-weight: 700;
+  color: var(--color-neon-green);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 1px solid rgba(57, 255, 20, 0.2);
+  padding-bottom: 0.4em;
+  margin-bottom: 0.8em;
+}
+
 /* ── Deck presentation overrides ── */
 .deck-home-link {
   position: fixed;
