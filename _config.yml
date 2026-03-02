@@ -1,0 +1,22 @@
+title: Aevatar Weekly Decks
+description: Weekly progress presentations for the Aevatar team
+url: ""
+baseurl: ""
+
+collections:
+  decks:
+    output: true
+    sort_by: date
+
+defaults:
+  - scope:
+      path: ""
+      type: "decks"
+    values:
+      layout: "deck"
+      author: "Aevatar Team"
+
+future: true
+
+plugins:
+  - jekyll-seo-tag

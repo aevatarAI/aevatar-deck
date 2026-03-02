@@ -1,0 +1,27 @@
+---
+layout: default
+---
+<div class="home">
+  <header class="site-header">
+    <h1>{{ site.title }}</h1>
+    <p>{{ site.description }}</p>
+  </header>
+
+  <main class="deck-list">
+    {% assign decks_by_week = site.decks | sort: "date" | reverse | group_by: "week" %}
+    {% for week in decks_by_week %}
+      <section class="week-group">
+        <h2>{{ week.name }}</h2>
+        <ul>
+          {% for deck in week.items %}
+            <li>
+              <span class="deck-badge deck-badge--{{ deck.type }}">{{ deck.type }}</span>
+              <a href="{{ deck.url | relative_url }}">{{ deck.title }}</a>
+              <span class="deck-meta">{{ deck.author }} &middot; {{ deck.date | date: "%b %d, %Y" }}</span>
+            </li>
+          {% endfor %}
+        </ul>
+      </section>
+    {% endfor %}
+  </main>
+</div>

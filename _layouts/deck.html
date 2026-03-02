@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} — {{ site.title }}</title>
+  <link rel="icon" href="{{ '/favicon.svg' | relative_url }}" type="image/svg+xml">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/black.css">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  {% seo %}
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      {% assign raw_content = content %}
+      {% assign vertical_sections = raw_content | split: "<hr />" %}
+      {% for vsection in vertical_sections %}
+        {% assign sub_slides = vsection | split: "***" %}
+        {% if sub_slides.size > 1 %}
+          <section>
+            {% for sub in sub_slides %}
+              <section>{{ sub }}</section>
+            {% endfor %}
+          </section>
+        {% else %}
+          <section>{{ vsection }}</section>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+  <a href="{{ '/' | relative_url }}" class="deck-home-link">&#8592; All Decks</a>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+  <script>
+    Reveal.initialize({
+      hash: true,
+      slideNumber: true,
+      transition: 'slide'
+    });
+  </script>
+</body>
+</html>

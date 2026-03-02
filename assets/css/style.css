@@ -1,0 +1,328 @@
+/* ── Cyberpunk Neon Theme ── */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;500;600;700&display=swap');
+
+:root {
+  --color-bg: #0a0a0f;
+  --color-surface: #12121a;
+  --color-surface-hover: #1a1a2e;
+  --color-text: #e0e0f0;
+  --color-muted: #6a6a8a;
+  --color-neon-cyan: #00f0ff;
+  --color-neon-magenta: #ff00aa;
+  --color-neon-purple: #b44aff;
+  --color-neon-green: #39ff14;
+  --color-border: rgba(0, 240, 255, 0.15);
+  --glow-cyan: 0 0 10px rgba(0, 240, 255, 0.3), 0 0 40px rgba(0, 240, 255, 0.1);
+  --glow-magenta: 0 0 10px rgba(255, 0, 170, 0.3), 0 0 40px rgba(255, 0, 170, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Rajdhani', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: var(--color-text);
+  background: var(--color-bg);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* ── Animated background grid ── */
+body:not(.reveal *) {
+  background-image:
+    linear-gradient(rgba(0, 240, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 240, 255, 0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+/* ── Home / Index page ── */
+.home {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  position: relative;
+}
+
+.site-header {
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--color-border);
+  position: relative;
+}
+
+.site-header::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 120px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--color-neon-cyan), transparent);
+  box-shadow: var(--glow-cyan);
+}
+
+.site-header h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 900;
+  font-size: 2.2rem;
+  margin: 0 0 0.5rem;
+  background: linear-gradient(135deg, var(--color-neon-cyan), var(--color-neon-purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.site-header p {
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+
+/* ── Week groups ── */
+.week-group {
+  margin-bottom: 2.5rem;
+}
+
+.week-group h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-neon-magenta);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 0.6rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 20px rgba(255, 0, 170, 0.3);
+}
+
+/* ── Deck list ── */
+.deck-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.deck-list li {
+  padding: 1rem 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.deck-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background: var(--color-neon-cyan);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  box-shadow: var(--glow-cyan);
+}
+
+.deck-list li:hover {
+  background: var(--color-surface-hover);
+  border-color: rgba(0, 240, 255, 0.3);
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.05);
+  transform: translateX(4px);
+}
+
+.deck-list li:hover::before {
+  opacity: 1;
+}
+
+.deck-list a {
+  color: var(--color-text);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  transition: color 0.2s ease;
+}
+
+.deck-list a:hover {
+  color: var(--color-neon-cyan);
+  text-decoration: none;
+  text-shadow: 0 0 15px rgba(0, 240, 255, 0.4);
+}
+
+.deck-meta {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.7rem;
+  color: var(--color-muted);
+  white-space: nowrap;
+  letter-spacing: 1px;
+  margin-left: auto;
+}
+
+/* ── Type badges ── */
+.deck-badge {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 0.2rem 0.6rem;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.deck-badge--plan {
+  color: var(--color-neon-cyan);
+  border: 1px solid rgba(0, 240, 255, 0.3);
+  background: rgba(0, 240, 255, 0.08);
+  text-shadow: 0 0 8px rgba(0, 240, 255, 0.3);
+}
+
+.deck-badge--review {
+  color: var(--color-neon-magenta);
+  border: 1px solid rgba(255, 0, 170, 0.3);
+  background: rgba(255, 0, 170, 0.08);
+  text-shadow: 0 0 8px rgba(255, 0, 170, 0.3);
+}
+
+/* ── Deck presentation overrides ── */
+.deck-home-link {
+  position: fixed;
+  bottom: 1.25rem;
+  left: 1.25rem;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.65rem;
+  color: var(--color-muted);
+  text-decoration: none;
+  z-index: 100;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 0.4rem 0.8rem;
+  border: 1px solid var(--color-border);
+  border-radius: 2px;
+  background: rgba(10, 10, 15, 0.8);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.deck-home-link:hover {
+  color: var(--color-neon-cyan);
+  border-color: var(--color-neon-cyan);
+  box-shadow: var(--glow-cyan);
+}
+
+/* ── reveal.js dark overrides ── */
+.reveal-viewport {
+  background: var(--color-bg) !important;
+  background-image:
+    linear-gradient(rgba(0, 240, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 240, 255, 0.02) 1px, transparent 1px) !important;
+  background-size: 60px 60px !important;
+}
+
+.reveal {
+  color: var(--color-text);
+}
+
+.reveal h1, .reveal h2, .reveal h3 {
+  font-family: 'Orbitron', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--color-neon-cyan);
+  text-shadow: 0 0 30px rgba(0, 240, 255, 0.3);
+}
+
+.reveal h1 {
+  font-size: 2.2em;
+  background: linear-gradient(135deg, var(--color-neon-cyan), var(--color-neon-purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.reveal h2 {
+  font-size: 1.6em;
+}
+
+.reveal p, .reveal li {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.95em;
+  color: var(--color-text);
+}
+
+.reveal strong {
+  color: var(--color-neon-magenta);
+  text-shadow: 0 0 10px rgba(255, 0, 170, 0.2);
+}
+
+.reveal ul {
+  list-style: none;
+  padding-left: 1.5em;
+}
+
+.reveal ul li::before {
+  content: '>';
+  color: var(--color-neon-green);
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  display: inline-block;
+  width: 1.5em;
+  margin-left: -1.5em;
+  text-shadow: 0 0 10px rgba(57, 255, 20, 0.4);
+}
+
+.reveal a {
+  color: var(--color-neon-purple);
+}
+
+.reveal .slide-number {
+  font-family: 'Orbitron', sans-serif;
+  color: var(--color-muted) !important;
+  font-size: 0.6em;
+  letter-spacing: 1px;
+}
+
+.reveal .progress span {
+  background: linear-gradient(90deg, var(--color-neon-cyan), var(--color-neon-magenta)) !important;
+  box-shadow: 0 0 10px rgba(0, 240, 255, 0.5);
+}
+
+.reveal .controls button {
+  color: var(--color-neon-cyan) !important;
+}
+
+/* ── Scanline animation ── */
+@keyframes scanline {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100vh); }
+}
+
+.home::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, transparent, var(--color-neon-cyan), transparent);
+  opacity: 0.08;
+  animation: scanline 8s linear infinite;
+  pointer-events: none;
+  z-index: 999;
+}
