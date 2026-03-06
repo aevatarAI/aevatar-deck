@@ -21,7 +21,7 @@ member: Kai Wei
 - Two notification channels: **Telegram bot** and **mobile app push notifications**
 - Includes a full management dashboard: notification settings, approval history, and active grants
 - Deployed to production
-- App submission preparation is underway from Potter side
+- Mobile app submitted to the App Store for approval
 
 ***
 
