@@ -80,5 +80,4 @@ member: Kai Wei
 <div class="slide-meta"><span class="owner-tag">@Kai Wei</span> · <strong>Sisyphus</strong></div>
 
 - Set up automated deployment so that our graph service can go from code change to live with a single click — no manual steps needed
-- The remaining four services (API, Web, notification, storage) can deploy automatically, but the automated build step still needs to be connected
-- Carrying over to next week — no blockers, just ran out of time
+- Web and API services now have full CI/CD pipelines ready — just waiting for merge to dev

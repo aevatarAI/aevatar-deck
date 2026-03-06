@@ -77,10 +77,8 @@ member: Shining
 
 ### ~8k Purified Nodes → ~2,600 Page PDF
 
-With ~8k purified nodes, we produced a ~2,600 page PDF paper.
-
-<div style="display: flex; justify-content: center; align-items: flex-start; height: 50vh;">
-<img src="{{ '/assets/images/week10-review-shining-paper-page2635.png' | relative_url }}" alt="Generated Paper Page 2635" style="max-height: 45vh;">
+<div style="display: flex; justify-content: center;">
+<img src="{{ '/assets/images/week10-review-shining-paper-page2635.png' | relative_url }}" alt="Generated Paper Page 2635" style="max-height: 40vh;">
 </div>
 
 ---
@@ -97,7 +95,7 @@ With ~8k purified nodes, we produced a ~2,600 page PDF paper.
 
 ## 4. Research Flow Improvements
 
-<div class="slide-meta"><span class="owner-tag">@Shining</span> · <strong>Sisyphus Frontend</strong></div>
+<div class="slide-meta"><span class="owner-tag">@Shining</span> · <strong>Sisyphus</strong></div>
 
 - Updated Sisyphus frontend interaction flow to align with the new TeX node upload pipeline and enhanced research loop
 - Reflects the updated data flow with smoother navigation
