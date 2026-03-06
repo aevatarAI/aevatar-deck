@@ -13,6 +13,12 @@ member: Kai Wei
 
 ---
 
+## What is NyxID?
+
+NyxID is our identity and access platform — it controls who can sign in, which services they can use, and acts as the secure gateway between users and all connected services.
+
+---
+
 ## 1. Authentication Challenges (NyxID)
 
 <div class="slide-meta"><span class="owner-tag">@Kai Wei</span> · <strong>NyxID Mobile · NyxID Platform</strong></div>
