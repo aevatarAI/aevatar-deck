@@ -85,7 +85,7 @@ member: Shining
 
 ---
 
-## 4. UI/UX Flow Improvements
+## 4. Research Flow Improvements
 
 <div class="slide-meta"><span class="owner-tag">@Shining</span> · <strong>Sisyphus Frontend</strong></div>
 
@@ -95,7 +95,7 @@ member: Shining
 
 ***
 
-### UI/UX Improvements
+### Research Flow
 
 ![UI/UX Flow]({{ '/assets/images/week10-review-shining-uiux.png' | relative_url }})
 
