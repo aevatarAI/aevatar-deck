@@ -38,6 +38,14 @@ member: Shining
 <div style="position: absolute; bottom: 8px; left: 8px; border: 2px solid #00f0ff; border-radius: 6px; padding: 2px 8px; background: rgba(0,240,255,0.15); color: #00f0ff; font-size: 0.7em; font-weight: 700; box-shadow: 0 0 12px rgba(0,240,255,0.4);">7268 nodes &nbsp; 844 edges</div>
 </div>
 
+***
+
+### 1 Raw Node → N Strongly Typed Nodes
+
+<div style="display: flex; justify-content: center; align-items: center;">
+<img src="{{ '/assets/images/sisyphus-red-blue-nodes.svg' | relative_url }}" alt="1 Raw Node to N Strongly Typed Nodes" style="max-height: 55vh; width: auto;">
+</div>
+
 ---
 
 ## 2. Paper Compilation & Generation
