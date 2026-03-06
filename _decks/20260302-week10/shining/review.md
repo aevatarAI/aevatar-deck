@@ -95,7 +95,7 @@ member: Shining
 
 ## 4. Research Flow Improvements
 
-<div class="slide-meta"><span class="owner-tag">@Shining</span> · <strong>Sisyphus Frontend</strong></div>
+<div class="slide-meta"><span class="owner-tag">@Shining</span> · <strong>Sisyphus</strong></div>
 
 - Updated Sisyphus frontend interaction flow to align with the new TeX node upload pipeline and enhanced research loop
 - Reflects the updated data flow with smoother navigation
