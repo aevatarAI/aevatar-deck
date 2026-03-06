@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="960" viewBox="0 0 1600 960" role="img" aria-labelledby="title desc">
+  <title id="title">Playwright Agents Flowchart</title>
+  <desc id="desc">AI-driven end-to-end testing loop: planner, generator, executor, healer.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#12131b"/>
+      <stop offset="100%" stop-color="#0d0e14"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a1d28"/>
+      <stop offset="100%" stop-color="#141722"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00e5ff"/>
+      <stop offset="100%" stop-color="#63f5a6"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L12,6 L0,12 z" fill="#67d8ff"/>
+    </marker>
+    <style>
+      .title { font: 700 62px 'Rajdhani', 'PingFang SC', 'Microsoft YaHei', sans-serif; fill: #e8f6ff; }
+      .subtitle { font: 500 28px 'Rajdhani', 'PingFang SC', 'Microsoft YaHei', sans-serif; fill: #9db2c6; }
+      .box-title { font: 700 34px 'Rajdhani', 'PingFang SC', 'Microsoft YaHei', sans-serif; fill: #f2f8ff; }
+      .box-desc { font: 500 24px 'Rajdhani', 'PingFang SC', 'Microsoft YaHei', sans-serif; fill: #bdd0e0; }
+      .small { font: 500 22px 'Rajdhani', 'PingFang SC', 'Microsoft YaHei', sans-serif; fill: #9fb6ca; }
+      .chip { font: 700 20px 'Rajdhani', 'PingFang SC', 'Microsoft YaHei', sans-serif; fill: #0e141b; }
+      .line { stroke: #67d8ff; stroke-width: 4; fill: none; marker-end: url(#arrow); }
+      .loop { stroke: #63f5a6; stroke-width: 4; fill: none; marker-end: url(#arrow); stroke-dasharray: 10 10; }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="1600" height="960" fill="url(#bg)"/>
+  <rect x="40" y="40" width="1520" height="880" rx="22" fill="none" stroke="#2a3240"/>
+
+  <text x="90" y="130" class="title">Playwright Agents 测试闭环流程图</text>
+  <text x="90" y="172" class="subtitle">需求输入 -> Planner -> Generator -> 执行验证 -> Healer -> 回归修复</text>
+
+  <rect x="100" y="250" width="220" height="110" rx="14" fill="#1f2532" stroke="#3e4c63"/>
+  <text x="130" y="315" class="box-title">输入需求</text>
+  <text x="130" y="345" class="small">业务场景 / 页面</text>
+
+  <rect x="390" y="220" width="280" height="180" rx="16" fill="url(#panel)" stroke="#3b526a"/>
+  <text x="430" y="285" class="box-title">Planner</text>
+  <text x="430" y="322" class="box-desc">生成测试计划</text>
+  <text x="430" y="354" class="small">产出：specs/*.md</text>
+
+  <rect x="730" y="220" width="280" height="180" rx="16" fill="url(#panel)" stroke="#3b526a"/>
+  <text x="760" y="285" class="box-title">Generator</text>
+  <text x="760" y="322" class="box-desc">生成可运行脚本</text>
+  <text x="760" y="354" class="small">产出：tests/*.spec.ts</text>
+
+  <rect x="1070" y="220" width="280" height="180" rx="16" fill="url(#panel)" stroke="#3b526a"/>
+  <text x="1120" y="285" class="box-title">Executor</text>
+  <text x="1120" y="322" class="box-desc">执行 E2E 用例</text>
+  <text x="1120" y="354" class="small">产出：报告 / Trace</text>
+
+  <rect x="730" y="520" width="280" height="180" rx="16" fill="url(#panel)" stroke="#3b6a5c"/>
+  <text x="790" y="585" class="box-title">Healer</text>
+  <text x="790" y="622" class="box-desc">定位失败并修复</text>
+  <text x="790" y="654" class="small">回写：补丁 / 新脚本</text>
+
+  <rect x="1070" y="520" width="280" height="180" rx="16" fill="url(#panel)" stroke="#3b6a5c"/>
+  <text x="1115" y="585" class="box-title">回归验证</text>
+  <text x="1115" y="622" class="box-desc">复跑关键场景</text>
+  <text x="1115" y="654" class="small">通过后沉淀样例</text>
+
+  <path class="line" d="M320 305 H380"/>
+  <path class="line" d="M670 305 H720"/>
+  <path class="line" d="M1010 305 H1060"/>
+  <path class="line" d="M1210 400 V500"/>
+  <path class="line" d="M1070 610 H1020"/>
+
+  <path class="loop" d="M730 610 C580 610, 540 520, 540 410"/>
+  <path class="loop" d="M1348 610 C1460 610, 1460 300, 1360 300"/>
+
+  <rect x="100" y="760" width="1400" height="110" rx="14" fill="#121a22" stroke="#33475d"/>
+  <text x="140" y="825" class="box-desc">落地示例：NyxID 平台 API Keys 页面测试已按该流程跑通，形成可复用测试样例。</text>
+
+  <rect x="116" y="90" width="140" height="34" rx="8" fill="url(#accent)"/>
+  <text x="150" y="114" class="chip">AI-Driven</text>
+</svg>
