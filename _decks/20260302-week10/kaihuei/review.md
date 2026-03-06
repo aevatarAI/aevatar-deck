@@ -54,3 +54,21 @@ member: Kaihuei
 <div style="display: flex; justify-content: center; align-items: flex-start;">
 <img src="{{ '/assets/images/week10-review-kaihuei-soulgarden-alert.png' | relative_url }}" alt="SoulGarden Lark Alert Notifications" style="max-height: 45vh;">
 </div>
+
+---
+
+## 4. Developer Platform 支持部署新 Aevatar 框架服务
+
+<div class="slide-meta"><span class="owner-tag">@Kaihuei</span> · <strong>Developer Platform</strong></div>
+
+- Developer Platform 支持部署新 Aevatar 框架服务
+- 支持添加配置文件和文件挂载至容器指定路径
+- 支持调整 nginx body size
+
+***
+
+### App Configuration Files
+
+<div style="display: flex; justify-content: center; align-items: flex-start;">
+<img src="{{ '/assets/images/week10-review-kaihuei-devplatform-config.png' | relative_url }}" alt="Developer Platform App Configuration Files" style="max-height: 45vh;">
+</div>
