@@ -38,22 +38,6 @@ member: Kaihuei
 - 在青云香港节点搭建 vless + reality 代理，伪装微软流量，转发至新加坡
 - 提供管理 Panel，已开通 8 个账号，分配给中国区 7 位同事
 
-***
-
-### SOP 文档
-
-<div style="display: flex; justify-content: center; align-items: flex-start;">
-<img src="{{ '/assets/images/week10-review-kaihuei-codex-sop.png' | relative_url }}" alt="Codex SOP v1.0" style="max-height: 45vh;">
-</div>
-
-***
-
-### 代理管理 Panel
-
-<div style="display: flex; justify-content: center; align-items: flex-start;">
-<img src="{{ '/assets/images/week10-review-kaihuei-codex-panel.png' | relative_url }}" alt="Proxy Management Panel" style="max-height: 45vh;">
-</div>
-
 ---
 
 ## 3. SoulGarden 核心监控告警上线
