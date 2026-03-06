@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 600" font-family="'Segoe UI', 'PingFang SC', sans-serif">
+
+  <defs>
+    <marker id="arr" viewBox="0 0 8 6" refX="8" refY="3" markerWidth="8" markerHeight="6" orient="auto">
+      <path d="M0,0.5 L7,3 L0,5.5" fill="none" stroke="#c0c0c0" stroke-width="1" stroke-linejoin="round"/>
+    </marker>
+    <marker id="arr-blue" viewBox="0 0 8 6" refX="8" refY="3" markerWidth="8" markerHeight="6" orient="auto">
+      <path d="M0,0.5 L7,3 L0,5.5" fill="none" stroke="#60a5fa" stroke-width="1.2" stroke-linejoin="round"/>
+    </marker>
+    <filter id="card" x="-2%" y="-2%" width="104%" height="108%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+
+
+  <!-- ===== RED CARD ===== -->
+  <rect x="30" y="20" width="310" height="500" rx="14" fill="white" stroke="#fca5a5" stroke-width="1.5" filter="url(#card)"/>
+  <rect x="30" y="20" width="6" height="500" rx="3" fill="#ef4444"/>
+
+  <text x="185" y="52" text-anchor="middle" font-size="14" font-weight="700" fill="#dc2626">Raw Node</text>
+  <text x="185" y="70" text-anchor="middle" font-size="10" fill="#f87171">12 fields  ·  mixed languages</text>
+
+  <line x1="55" y1="82" x2="320" y2="82" stroke="#fee2e2" stroke-width="1"/>
+
+  <text x="55" y="102" font-size="9.5" fill="#a3a3a3">kg_id</text>
+  <text x="145" y="102" font-size="9.5" fill="#7f1d1d" font-weight="500" font-family="'SF Mono', monospace">KG-20260305-00576</text>
+  <text x="55" y="121" font-size="9.5" fill="#a3a3a3">atom_type</text>
+  <text x="145" y="121" font-size="9.5" fill="#7f1d1d" font-family="'SF Mono', monospace">tp-thm</text>
+  <text x="55" y="140" font-size="9.5" fill="#a3a3a3">unit_env</text>
+  <text x="145" y="140" font-size="9.5" fill="#7f1d1d" font-family="'SF Mono', monospace">theorem</text>
+  <text x="55" y="159" font-size="9.5" fill="#a3a3a3">label</text>
+  <text x="145" y="159" font-size="8.5" fill="#7f1d1d" font-family="'SF Mono', monospace">thm-fold-bin-renyi-</text>
+  <text x="145" y="171" font-size="8.5" fill="#7f1d1d" font-family="'SF Mono', monospace">mass-spectrum-affine-...</text>
+
+  <text x="55" y="192" font-size="9.5" fill="#d4d4d4" font-style="italic">+ 7 more fields...</text>
+
+  <line x1="55" y1="204" x2="320" y2="204" stroke="#fee2e2" stroke-width="1"/>
+
+  <text x="55" y="222" font-size="9.5" fill="#a3a3a3">tex_content</text>
+  <text x="145" y="222" font-size="9" fill="#a3a3a3">(833 chars)</text>
+
+  <!-- TeX block -->
+  <rect x="50" y="232" width="275" height="270" rx="8" fill="#fef2f2"/>
+  <text x="62" y="252" font-size="8" fill="#991b1b" font-family="'SF Mono', monospace">% auto-generated atom</text>
+  <text x="62" y="266" font-size="8" fill="#991b1b" font-family="'SF Mono', monospace">% source: /Users/.../auric-</text>
+  <text x="62" y="280" font-size="8" fill="#991b1b" font-family="'SF Mono', monospace">%   golden-phi/2026_golden_...</text>
+  <text x="62" y="294" font-size="8" fill="#991b1b" font-family="'SF Mono', monospace">\phantomsection</text>
+  <text x="62" y="308" font-size="8" fill="#991b1b" font-family="'SF Mono', monospace">\label{kgid:3b790d51a4a7}</text>
+  <text x="62" y="322" font-size="8" fill="#991b1b" font-family="'SF Mono', monospace">\begin{theorem}[bin-fold</text>
+  <text x="62" y="336" font-size="8" fill="#991b1b" font-family="'SF Mono', monospace">  输出分布的 Renyi 质量谱仿射律]</text>
+  <text x="62" y="350" font-size="8" fill="#991b1b" font-family="'SF Mono', monospace">令 \(\pi_m(w):=d_m^{\mathrm</text>
+  <text x="62" y="364" font-size="8" fill="#991b1b" font-family="'SF Mono', monospace">  {bin}}(w)/2^m\) 为 bin-fold</text>
+  <text x="62" y="378" font-size="8" fill="#991b1b" font-family="'SF Mono', monospace">  在均匀微态输入下诱导的输出分布</text>
+
+  <text x="155" y="404" text-anchor="middle" font-size="16" fill="#d1d5db" letter-spacing="6">· · · · ·</text>
+
+  <text x="62" y="428" font-size="8" fill="#991b1b" font-family="'SF Mono', monospace">=(q-1)\log\varphi.</text>
+  <text x="62" y="442" font-size="8" fill="#991b1b" font-family="'SF Mono', monospace">\end{theorem}</text>
+
+  <text x="62" y="464" font-size="8" fill="#e87933" font-style="italic">Mixed: Chinese + English + LaTeX</text>
+  <text x="62" y="478" font-size="8" fill="#e87933" font-style="italic">Multiple concepts in one block</text>
+
+  <!-- ===== ARROWS red -> blue ===== -->
+  <path d="M340,132 Q400,132 420,97 Q432,77 450,77" stroke="#d1d5db" stroke-width="1.5" stroke-dasharray="5,4" fill="none" marker-end="url(#arr)"/>
+  <path d="M340,292 L450,292" stroke="#d1d5db" stroke-width="1.5" stroke-dasharray="5,4" fill="none" marker-end="url(#arr)"/>
+  <path d="M340,422 Q400,422 420,467 Q432,492 450,492" stroke="#d1d5db" stroke-width="1.5" stroke-dasharray="5,4" fill="none" marker-end="url(#arr)"/>
+
+  <!-- AI Purify pill -->
+  <rect x="372" y="264" width="52" height="40" rx="10" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="398" y="282" text-anchor="middle" font-size="9" fill="#64748b" font-weight="600">AI</text>
+  <text x="398" y="296" text-anchor="middle" font-size="9" fill="#64748b" font-weight="600">Purify</text>
+
+  <!-- ===== BLUE CARDS ===== -->
+
+  <!-- definition: y=20..150 -->
+  <rect x="450" y="20" width="380" height="130" rx="14" fill="white" stroke="#93c5fd" stroke-width="1.5" filter="url(#card)"/>
+  <rect x="450" y="20" width="6" height="130" rx="3" fill="#3b82f6"/>
+  <text x="640" y="48" text-anchor="middle" font-size="13" font-weight="700" fill="#2563eb">definition</text>
+  <text x="468" y="72" font-size="9.5" fill="#94a3b8">abstract</text>
+  <text x="530" y="72" font-size="9" fill="#1e40af">"Defines the induced output distribution for</text>
+  <text x="530" y="85" font-size="9" fill="#1e40af">bin-fold under uniform microstate input."</text>
+  <text x="468" y="110" font-size="9.5" fill="#94a3b8">body</text>
+  <text x="530" y="110" font-size="9" fill="#1e40af">"Define pi_m(w) := d_m^bin(w) / 2^m, ..."</text>
+  <text x="468" y="140" font-size="7.5" fill="#cbd5e1">e7ebb4fb-bfb1-47d4-9ee8-bb54f34b0b82</text>
+
+  <!-- theorem: y=220..360 -->
+  <rect x="450" y="220" width="380" height="140" rx="14" fill="white" stroke="#93c5fd" stroke-width="1.5" filter="url(#card)"/>
+  <rect x="450" y="220" width="6" height="140" rx="3" fill="#3b82f6"/>
+  <text x="640" y="248" text-anchor="middle" font-size="13" font-weight="700" fill="#2563eb">theorem</text>
+  <text x="468" y="274" font-size="9.5" fill="#94a3b8">abstract</text>
+  <text x="530" y="274" font-size="9" fill="#1e40af">"The q-moment of the bin-fold output obeys</text>
+  <text x="530" y="287" font-size="9" fill="#1e40af">an affine Renyi mass-spectrum law in m."</text>
+  <text x="468" y="314" font-size="9.5" fill="#94a3b8">body</text>
+  <text x="530" y="314" font-size="9" fill="#1e40af">"For every q>0, exists K_q>0 such that</text>
+  <text x="530" y="327" font-size="9" fill="#1e40af">sum pi_m(w)^q = K_q * phi^((1-q)m) ..."</text>
+  <text x="468" y="352" font-size="7.5" fill="#cbd5e1">6ebe4c76-1053-4d03-b813-e62862939458</text>
+
+  <!-- corollary: y=430..550 -->
+  <rect x="450" y="430" width="380" height="120" rx="14" fill="white" stroke="#93c5fd" stroke-width="1.5" filter="url(#card)"/>
+  <rect x="450" y="430" width="6" height="120" rx="3" fill="#3b82f6"/>
+  <text x="640" y="458" text-anchor="middle" font-size="13" font-weight="700" fill="#2563eb">corollary</text>
+  <text x="468" y="484" font-size="9.5" fill="#94a3b8">abstract</text>
+  <text x="530" y="484" font-size="9" fill="#1e40af">"The Renyi mass spectrum has linear slope</text>
+  <text x="530" y="497" font-size="9" fill="#1e40af">(q-1) log(phi) in order q."</text>
+  <text x="468" y="522" font-size="9.5" fill="#94a3b8">body</text>
+  <text x="530" y="522" font-size="9" fill="#1e40af">"Hence h_q = (q-1) log(phi)."</text>
+  <text x="468" y="544" font-size="7.5" fill="#cbd5e1">6585b026-de65-40b9-bf92-a1aea4fcce47</text>
+
+  <!-- ===== BLUE EDGES (smooth curves) ===== -->
+
+  <!-- theorem -> definition -->
+  <path d="M830,282 C862,282 862,102 830,102" stroke="#93c5fd" stroke-width="1.8" fill="none" marker-end="url(#arr-blue)"/>
+  <rect x="870" y="180" width="78" height="22" rx="11" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1"/>
+  <text x="909" y="195" text-anchor="middle" font-size="9" fill="#3b82f6" font-weight="600">references</text>
+
+  <!-- corollary -> theorem -->
+  <path d="M830,492 C880,492 880,312 830,312" stroke="#93c5fd" stroke-width="1.8" fill="none" marker-end="url(#arr-blue)"/>
+  <rect x="888" y="390" width="78" height="22" rx="11" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1"/>
+  <text x="927" y="405" text-anchor="middle" font-size="9" fill="#3b82f6" font-weight="600">references</text>
+
+  <!-- ===== BOTTOM SUMMARY ===== -->
+  <rect x="30" y="562" width="310" height="24" rx="12" fill="#fef2f2"/>
+  <text x="185" y="578" text-anchor="middle" font-size="9.5" fill="#ef4444" font-weight="600">Messy: 12 fields · mixed lang · multi-concept</text>
+
+  <rect x="450" y="562" width="380" height="24" rx="12" fill="#eff6ff"/>
+  <text x="640" y="578" text-anchor="middle" font-size="9.5" fill="#3b82f6" font-weight="600">Clean: type + abstract + body · English · atomic</text>
+
+</svg>
