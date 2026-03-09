@@ -26,23 +26,16 @@ member: Eanzhao
 
 ***
 
-<div class="slide-section-label">新增 Workflow 原语（Playwright 必需）</div>
+<div class="slide-section-label">新增 Workflow 原语（Playwright Call）</div>
 
-- `create_session`
-- `navigate`
-- `click`
-- `fill`
-- `wait_for`
-- `snapshot`
-- `extract_text`
-- `screenshot`
-- `close_session`
+- `playwright_call`
+- `operation` values: `create_session` / `navigate` / `click` / `fill` / `wait_for` / `snapshot` / `extract_text` / `screenshot` / `close_session`
 
 ***
 
 <div class="slide-section-label">编排方式（Workflow Call）</div>
 
-- 使用 Workflow primitives 组合 Playwright 子流程，并沉淀为可复用子 workflow
+- 使用 `playwright_call` 及其 `operation` values 组合 Playwright 子流程，并沉淀为可复用子 workflow
 - Grab 点餐流程独立保存为 `grab-order-workflow.yaml`
 - 主流程 `twilio-grab-main-workflow.yaml` 通过 `workflow_call` 调用子流程并接收结构化结果
 
@@ -52,14 +45,14 @@ member: Eanzhao
 
 - Twilio Bridge GAgent 实现（Twilio 消息接入、回写、会话映射）
 - `playwright-bridge-spec.md`（Aevatar 调用到 Worker 任务的翻译协议）
-- Workflow 原语定义与示例 YAML（可直接编排）
+- `playwright_call` 原语定义与示例 YAML（可直接编排）
 
 ***
 
 <div class="slide-section-label">验收标准</div>
 
 - Twilio Bridge GAgent 能稳定接收用户消息并将系统回复写回 Twilio
-- 9 个通用原语在 staging 可独立调用并返回结构化结果
+- `playwright_call` 在 staging 可稳定执行 9 个 `operation` values 并返回结构化结果
 - 同一会话可跨多步复用上下文，`create_session` 到 `close_session` 生命周期完整
 - Worker 失败能被 Bridge 标准化回传并被 Workflow 正确重试或转人工
 
@@ -95,15 +88,15 @@ member: Eanzhao
 
 ---
 
-## 3. Grab 点餐子 Workflow（基于 Playwright primitives）
+## 3. Grab 点餐子 Workflow（基于 `playwright_call`）
 
 <div class="slide-meta"><span class="weight-badge">30%</span> <span class="owner-tag">@Eanzhao</span> · <strong>Grab Ordering Workflow</strong> · Due Friday 3/13 18:00</div>
 
-不额外引入 `grab.*` 原语，而是直接使用 Playwright primitives 编排 Grab 点餐子 workflow，沉淀为可复用的独立 YAML，并由主 workflow 通过 `workflow_call` 调用。
+不额外引入 `grab.*` 原语，而是直接使用 `playwright_call` 的不同 `operation` values 编排 Grab 点餐子 workflow，沉淀为可复用的独立 YAML，并由主 workflow 通过 `workflow_call` 调用。
 
 ***
 
-<div class="slide-section-label">Grab 子流程关键步骤（可能使用原语的形式来进行记录和标识，如grab.search_merchant）</div>
+<div class="slide-section-label">Grab 子流程关键步骤</div>
 
 - 搜索商家
 - 打开商家页
@@ -117,7 +110,7 @@ member: Eanzhao
 
 <div class="slide-section-label">交付物</div>
 
-- `grab-order-workflow.yaml`（基于 Playwright primitives 的 Grab 点餐子流程）
+- `grab-order-workflow.yaml`（基于 `playwright_call` 的 Grab 点餐子流程）
 - Grab 页面选择器与回退策略配置
 - 子流程输入输出样例（供 `workflow_call` 复用）
 
