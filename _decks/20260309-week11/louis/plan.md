@@ -15,7 +15,7 @@ member: louis
 
 ## 1. Marc.AI: Web Content Scraping Tool Integration
 
-<div class="slide-meta"><span class="weight-badge">30%</span> <span class="owner-tag">@louis</span> · <strong>Marc.AI</strong> · Due Friday 3/13</div>
+<div class="slide-meta"><span class="owner-tag">@louis</span> · <strong>Marc.AI</strong> · Due Friday 3/13</div>
 
 <div class="slide-section-label">具体内容</div>
 
@@ -42,7 +42,7 @@ member: louis
 
 ## 2. Marc.AI: Marketing Content Reasoning Agent
 
-<div class="slide-meta"><span class="weight-badge">30%</span> <span class="owner-tag">@louis</span> · <strong>Marc.AI</strong> · Due Friday 3/13</div>
+<div class="slide-meta"><span class="owner-tag">@louis</span> · <strong>Marc.AI</strong> · Due Friday 3/13</div>
 
 <div class="slide-section-label">具体内容</div>
 
@@ -69,7 +69,7 @@ member: louis
 
 ## 3. Marc.AI: Content Generation with nanobananaimg/APIs
 
-<div class="slide-meta"><span class="weight-badge">30%</span> <span class="owner-tag">@louis</span> · <strong>Marc.AI</strong> · Due Friday 3/13</div>
+<div class="slide-meta"><span class="owner-tag">@louis</span> · <strong>Marc.AI</strong> · Due Friday 3/13</div>
 
 <div class="slide-section-label">具体内容</div>
 
@@ -94,7 +94,7 @@ member: louis
 
 ## 4. Marc.AI: User Output & Integration
 
-<div class="slide-meta"><span class="weight-badge">10%</span> <span class="owner-tag">@louis</span> · <strong>Marc.AI</strong> · Due Friday 3/13</div>
+<div class="slide-meta"><span class="owner-tag">@louis</span> · <strong>Marc.AI</strong> · Due Friday 3/13</div>
 
 <div class="slide-section-label">具体内容</div>
 
