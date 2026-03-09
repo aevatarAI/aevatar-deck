@@ -52,16 +52,6 @@ member: Potter
 - 新增 `Active Grants` 模块：展示当前生效授权及空态
 - 完成接口联调与状态处理（加载态、错误态、空态）
 
-### 参考界面（Approval History）
-
-![Approval History]({{ '/assets/images/week11-review-potter-approval-history.png' | relative_url }})
-
-***
-
-### 参考界面（Active Grants）
-
-![Active Grants]({{ '/assets/images/week11-review-potter-active-grants.png' | relative_url }})
-
 ***
 
 <div class="slide-section-label">交付物</div>
@@ -77,3 +67,15 @@ member: Potter
 - 两个模块在联调环境可稳定访问并正确渲染
 - 状态展示正确（Approved / Rejected / Expired）
 - 空态、加载态、错误态均可用
+
+---
+
+## 2.1 参考界面（Approval History）
+
+![Approval History]({{ '/assets/images/week11-review-potter-approval-history.png' | relative_url }})
+
+---
+
+## 2.2 参考界面（Active Grants）
+
+![Active Grants]({{ '/assets/images/week11-review-potter-active-grants.png' | relative_url }})
