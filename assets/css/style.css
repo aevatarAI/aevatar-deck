@@ -126,6 +126,27 @@ body:not(.reveal *) {
   padding-bottom: 0.6rem;
   margin-bottom: 1rem;
   text-shadow: 0 0 20px rgba(255, 0, 170, 0.3);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.week-arrow {
+  font-size: 0.7rem;
+  transition: transform 0.3s ease;
+}
+
+.week-group.expanded .week-arrow {
+  transform: rotate(180deg);
+}
+
+.week-group .deck-row {
+  display: none;
+}
+
+.week-group.expanded .deck-row {
+  display: block;
 }
 
 /* ── Deck rows (expandable) ── */
