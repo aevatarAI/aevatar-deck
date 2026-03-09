@@ -13,14 +13,13 @@ member: Eanzhao
 
 ---
 
-## 1. Aevatar Bridge 层（Twilio / Playwright）
+## 1. Aevatar + Playwright 执行层（Bridge / Worker）
 
 <div class="slide-meta"><span class="weight-badge">35%</span> <span class="owner-tag">@Eanzhao</span> · <strong>Execution Runtime</strong> · Due Friday 3/13 18:00</div>
 
-在 Aevatar 内补齐渠道接入与浏览器执行两类 Bridge 层，把“用户交互”“智能编排”和“页面执行”彻底解耦，支撑点餐场景的稳定编排。
+在 Aevatar 内补齐 Playwright GAgent / Worker 执行层，把“智能编排”和“页面执行”彻底解耦，支撑点餐场景的稳定编排。
 
 - Workflow / GAgent 负责理解意图、调用外部能力、处理失败重试、做人审、写入用户偏好记忆
-- Twilio Bridge GAgent 负责接收/发送 Twilio 消息，维护 `channel + user_id` 会话映射，并把用户交互转换为 Aevatar 事件
 - Playwright Bridge 负责把 Aevatar 的调用翻译成浏览器任务与会话上下文
 - Playwright Worker 负责真实浏览器执行（页面选择器、截图、DOM 提取、点击/输入）
 
@@ -37,13 +36,12 @@ member: Eanzhao
 
 - 使用 `playwright_call` 及其 `operation` values 组合 Playwright 子流程，并沉淀为可复用子 workflow
 - Grab 点餐流程独立保存为 `grab-order-workflow.yaml`
-- 主流程 `twilio-grab-main-workflow.yaml` 通过 `workflow_call` 调用子流程并接收结构化结果
+- 主流程 `grab-main-workflow.yaml` 通过 `workflow_call` 调用子流程并接收结构化结果
 
 ***
 
 <div class="slide-section-label">交付物</div>
 
-- Twilio Bridge GAgent 实现（Twilio 消息接入、回写、会话映射）
 - `playwright-bridge-spec.md`（Aevatar 调用到 Worker 任务的翻译协议）
 - `playwright_call` 原语定义与示例 YAML（可直接编排）
 
@@ -51,7 +49,7 @@ member: Eanzhao
 
 <div class="slide-section-label">验收标准</div>
 
-- Twilio Bridge GAgent 能稳定接收用户消息并将系统回复写回 Twilio
+- Playwright GAgent 能稳定接收 `playwright_call` 请求并返回结构化结果
 - `playwright_call` 在 staging 可稳定执行 9 个 `operation` values 并返回结构化结果
 - 同一会话可跨多步复用上下文，`create_session` 到 `close_session` 生命周期完整
 - Worker 失败能被 Bridge 标准化回传并被 Workflow 正确重试或转人工
@@ -62,18 +60,18 @@ member: Eanzhao
 
 <div class="slide-meta"><span class="weight-badge">35%</span> <span class="owner-tag">@Eanzhao</span> · <strong>Workflow Orchestration</strong> · Due Friday 3/13 18:00</div>
 
-在 Grab 点餐主链路中，由主 workflow 通过 Twilio Bridge GAgent 与用户交互，并由 Workflow / GAgent 处理意图理解、补问、人审、重试和偏好写回，形成“能下单、可纠错、会记忆”的可用版本。
+在 Grab 点餐主链路中，由主 workflow / GAgent 处理意图理解、补问、人审、重试和偏好写回，形成“能下单、可纠错、会记忆”的可用版本。
 
-- 主 workflow 通过 Twilio Bridge GAgent 与用户完成点餐沟通，解析订单意图，并对缺失字段自动补问，关键步骤支持人工确认
+- 主 workflow 负责点餐意图理解，对缺失字段自动补问，关键步骤支持人工确认
 - 主 workflow 通过 `workflow_call` 调用 `grab-order-workflow.yaml` 执行页面自动化子流程
-- 下单前注入单用户偏好（`channel + user_id` 维度），下单后回写偏好更新
+- 下单前注入单用户偏好（`user_id` 维度），下单后回写偏好更新
 - 对失败节点执行重试策略（限次重试 + 转人工兜底），避免流程中断
 
 ***
 
 <div class="slide-section-label">交付物</div>
 
-- `twilio-grab-main-workflow.yaml`（主流程：Twilio 交互、意图理解、补问、人审、偏好读写、`workflow_call`）
+- `grab-main-workflow.yaml`（主流程：意图理解、补问、人审、偏好读写、`workflow_call`）
 - `user-preference-gagent.md`（记忆模型、更新规则、冲突覆盖/重置）
 - Workflow 节点实现（intent-parser / slot-filler / human-review / preference-writer）
 
