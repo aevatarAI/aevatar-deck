@@ -17,11 +17,11 @@ layout: default
     {% for week in decks_by_week %}
       {% assign week_plans = week.items | where: "type", "plan" %}
       {% assign week_reviews = week.items | where: "type", "review" %}
-      <section class="week-group">
-        <h2>{{ week.name }}</h2>
+      <section class="week-group{% if forloop.first %} expanded{% endif %}">
+        <h2 onclick="this.parentElement.classList.toggle('expanded')">{{ week.name }} <span class="week-arrow">&#9662;</span></h2>
 
         {% if week_plans.size > 0 %}
-        <div class="deck-row">
+        <div class="deck-row{% if forloop.first %} expanded{% endif %}">
           <div class="deck-row-header" onclick="this.parentElement.classList.toggle('expanded')">
             <span class="deck-badge deck-badge--plan">plan</span>
             <span class="deck-row-title">Week Plan</span>
@@ -40,7 +40,7 @@ layout: default
         {% endif %}
 
         {% if week_reviews.size > 0 %}
-        <div class="deck-row">
+        <div class="deck-row{% if forloop.first %} expanded{% endif %}">
           <div class="deck-row-header" onclick="this.parentElement.classList.toggle('expanded')">
             <span class="deck-badge deck-badge--review">review</span>
             <span class="deck-row-title">Week Review</span>
