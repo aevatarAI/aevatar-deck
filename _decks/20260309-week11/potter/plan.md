@@ -17,8 +17,9 @@ member: Potter
 
 <div class="slide-meta"><span class="weight-badge">50%</span> <span class="owner-tag">@Potter</span> · <strong>NyxID Mobile (Android)</strong> · Due Friday 3/13</div>
 
-本周五（2026-03-13）前完成 NyxID Android 版本的修改调整、回归验证与提审。
+<div class="slide-section-label">具体内容</div>
 
+- 本周五（2026-03-13）前完成 NyxID Android 版本的修改调整、回归验证与提审
 - 完成提审前问题收敛与必要调整（功能、交互、稳定性）
 - 完成核心链路回归：Inbox → Detail → Approve / Deny → 回传
 - 输出提审包并完成审核提交流程
@@ -44,13 +45,12 @@ member: Potter
 
 <div class="slide-meta"><span class="weight-badge">50%</span> <span class="owner-tag">@Potter</span> · <strong>NyxID App</strong> · Due Friday 3/13</div>
 
-在 NyxID App 中新增审批历史与生效授权模块，提升授权过程可视化与可管理性。
+<div class="slide-section-label">具体内容</div>
 
+- 在 NyxID App 中新增审批历史与生效授权模块，提升授权过程可视化与可管理性
 - 新增 `Approval History` 模块：展示请求信息、审批状态、请求时间、决策时间
 - 新增 `Active Grants` 模块：展示当前生效授权及空态
 - 完成接口联调与状态处理（加载态、错误态、空态）
-
-***
 
 ### 参考界面（Approval History）
 
