@@ -44,7 +44,19 @@ member: Eanzhao
 
 ---
 
-## 4. 总结
+## 4. 长期记忆方案设计
+
+<div class="slide-meta"><span class="owner-tag">@Eanzhao</span> · <strong>Workflow / Scripting</strong></div>
+
+- 结合 workflow 与 scripting 机制设计一套**长期记忆方案**：新增一层长期记忆能力，由独立 **`MemoryGAgent`** 负责记忆写入与事实归档，由 **projection / query service** 负责记忆查询
+- **workflow** 与 **scripting** 均接入该层，分工不同：
+  - **workflow**：在执行过程中按需读写记忆
+  - **scripting**：从对话中提炼偏好、压缩记忆、做记忆治理
+- 长期记忆的**权威存储**不建议直接放在 script runtime 内
+
+---
+
+## 5. 总结
 
 <div class="slide-meta"><span class="owner-tag">@Eanzhao</span> · <strong>Review</strong></div>
 
