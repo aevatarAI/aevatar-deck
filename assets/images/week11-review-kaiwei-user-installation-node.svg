@@ -54,8 +54,14 @@
 
   <text x="540" y="286" text-anchor="middle" font-size="17" font-weight="700" fill="#1e293b">User's Node</text>
   <text x="540" y="312" text-anchor="middle" font-size="11" fill="#64748b">Runs on user's own</text>
-  <text x="540" y="328" text-anchor="middle" font-size="11" fill="#64748b">machine — stores API</text>
-  <text x="540" y="344" text-anchor="middle" font-size="11" fill="#64748b">credentials locally</text>
+  <text x="540" y="328" text-anchor="middle" font-size="11" fill="#64748b">machine — credentials</text>
+  <text x="540" y="344" text-anchor="middle" font-size="11" fill="#64748b">encrypted via OS Keychain</text>
+
+  <!-- OS Keychain badge -->
+  <rect x="490" y="356" width="100" height="20" rx="10" fill="#f0fdf4" stroke="#86efac" stroke-width="1"/>
+  <rect x="502" y="361" width="8" height="7" rx="1.5" fill="#16a34a"/>
+  <path d="M503,361 L503,358 C503,355 508,355 508,358 L508,361" fill="none" stroke="#16a34a" stroke-width="1.4"/>
+  <text x="515" y="370" font-size="8" fill="#166534" font-weight="600">OS Keychain</text>
 
   <!-- Arrow 2→3 -->
   <line x1="670" y1="280" x2="730" y2="280" stroke="#4b87c7" stroke-width="2.5" marker-end="url(#arr)"/>
