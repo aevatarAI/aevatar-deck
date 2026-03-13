@@ -18,24 +18,6 @@ member: Potter
 <div class="slide-meta"><span class="owner-tag">@Potter</span> · <strong>NyxID</strong></div>
 
 - 完成 NyxID iOS / Android 双端应用商店发布，发布链路已打通
-- 完成 `Approval History` 与 `Active Grants` 两个核心页面，补齐授权可见性与状态管理
-- 核心链路保持可用：Inbox → Detail → Approve / Deny → 回传
-
-***
-
-### Approval History
-
-<div style="display: flex; justify-content: center; align-items: flex-start; height: 60vh;">
-<img src="{{ '/assets/images/week11-review-potter-approval-history.png' | relative_url }}" alt="Approval History" style="max-height: 55vh;">
-</div>
-
-***
-
-### Active Grants
-
-<div style="display: flex; justify-content: center; align-items: flex-start; height: 60vh;">
-<img src="{{ '/assets/images/week11-review-potter-active-grants.png' | relative_url }}" alt="Active Grants" style="max-height: 55vh;">
-</div>
 
 ---
 
@@ -43,7 +25,7 @@ member: Potter
 
 <div class="slide-meta"><span class="owner-tag">@Potter</span> · <strong>Aevatar SDK</strong></div>
 
-- 完成 Aevatar SDK 主体开发，沉淀统一的调用入口与对象封装
+- 完成 Aevatar SDK 主体升级更新，沉淀统一的调用入口与对象封装
 - 对齐 Aevatar 服务能力边界、接口约定与数据结构，降低前后端联调成本
 - 为 Console 和后续业务接入提供可复用的 SDK 基座
 
@@ -51,7 +33,7 @@ member: Potter
 
 <div class="slide-section-label">本周交付</div>
 
-- SDK 开发完成，可支撑 Aevatar 服务接入
+- SDK 开发完成，可支撑 Aevatar console 服务接入
 - 服务侧能力映射完成，关键对象与调用路径已统一
 - 为 `Workflows` / `Actors` / `Runs` 模块接入打下基础
 
