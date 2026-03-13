@@ -47,6 +47,14 @@ member: Kai Wei
 <img src="{{ '/assets/images/week11-review-kaiwei-nyxid-node-detail.png' | relative_url }}" alt="NyxID Node Detail" style="max-height: 60vh; width: auto; border-radius: 10px; box-shadow: 0 4px 24px rgba(0,0,0,0.1);">
 </div>
 
+***
+
+### macOS Keychain Integration
+
+<div style="display: flex; justify-content: center; align-items: center;">
+<img src="{{ '/assets/images/week11-review-kaiwei-macos-keychain.png' | relative_url }}" alt="macOS Keychain Access — nyxid-node credentials" style="max-height: 60vh; width: auto; border-radius: 10px; box-shadow: 0 4px 24px rgba(0,0,0,0.1);">
+</div>
+
 ---
 
 ## 3. KMS Encryption with Rotatable Secrets
