@@ -1,0 +1,18 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#F4F5FA"/>
+  <rect x="40" y="36" width="1520" height="828" rx="24" fill="#FFFFFF" stroke="#D7DCEC" stroke-width="2"/>
+  <text x="86" y="108" fill="#5D657F" font-family="Arial, sans-serif" font-size="34" font-weight="700" letter-spacing="2">RESULT</text>
+  <rect x="82" y="146" width="1436" height="666" rx="18" fill="#F5F6FB" stroke="#D6DCEE"/>
+  <rect x="82" y="146" width="8" height="666" rx="4" fill="#33C26B"/>
+  <text x="118" y="214" fill="#20263D" font-family="Courier New, monospace" font-size="44" font-weight="700"># Brand Discovery Report</text>
+  <text x="118" y="300" fill="#20263D" font-family="Courier New, monospace" font-size="34" font-weight="700">## Brand Profile</text>
+  <text x="118" y="356" fill="#20263D" font-family="Courier New, monospace" font-size="28">- Basecamp identified as the official brand and site.</text>
+  <text x="118" y="400" fill="#20263D" font-family="Courier New, monospace" font-size="28">- Product type: project management software and collaboration.</text>
+  <text x="118" y="444" fill="#20263D" font-family="Courier New, monospace" font-size="28">- Tone: straightforward, calm, reliable, and no-nonsense.</text>
+  <text x="118" y="488" fill="#20263D" font-family="Courier New, monospace" font-size="28">- Value proposition: clearer teamwork with less operational noise.</text>
+  <text x="118" y="532" fill="#20263D" font-family="Courier New, monospace" font-size="28">- Audience: small teams, agencies, startups, and client-service groups.</text>
+  <text x="118" y="612" fill="#20263D" font-family="Courier New, monospace" font-size="34" font-weight="700">## Competitor Segmentation</text>
+  <text x="118" y="668" fill="#20263D" font-family="Courier New, monospace" font-size="28">- Teamwork: overlap in project management, client work, and reporting.</text>
+  <text x="118" y="712" fill="#20263D" font-family="Courier New, monospace" font-size="28">- Trello: overlap in simple coordination, lightweight planning, and visibility.</text>
+  <text x="118" y="756" fill="#20263D" font-family="Courier New, monospace" font-size="28">- Signals gathered from official sites, pricing pages, and public content.</text>
+</svg>
