@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 580" font-family="'Segoe UI', 'PingFang SC', sans-serif">
+
+  <defs>
+    <filter id="card" x="-2%" y="-2%" width="104%" height="108%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.08"/>
+    </filter>
+    <marker id="arr" viewBox="0 0 10 7" refX="10" refY="3.5" markerWidth="12" markerHeight="8" orient="auto">
+      <path d="M0,0.5 L9,3.5 L0,6.5" fill="none" stroke="#4b87c7" stroke-width="1.4" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1080" height="580" fill="#f8fafc" rx="16"/>
+
+  <!-- Status badge -->
+  <text x="60" y="42" font-size="12" font-weight="700" fill="#16a34a" letter-spacing="2">COMPLETED</text>
+
+  <!-- Title -->
+  <text x="60" y="82" font-size="32" font-weight="800" fill="#1e293b">User Installation Node</text>
+
+  <!-- Subtitle -->
+  <text x="60" y="110" font-size="14" fill="#64748b">Self-hosted secrets — users keep full control of their API credentials</text>
+
+  <!-- ===== THREE-BOX ARCHITECTURE ===== -->
+
+  <!-- Box 1: NyxID Master -->
+  <rect x="80" y="170" width="260" height="220" rx="16" fill="white" stroke="#e2e8f0" stroke-width="1.5" filter="url(#card)"/>
+
+  <!-- Server icon -->
+  <circle cx="210" cy="230" r="32" fill="#e0effa"/>
+  <rect x="196" y="216" width="28" height="6" rx="2" fill="#4b87c7"/>
+  <rect x="196" y="226" width="28" height="6" rx="2" fill="#4b87c7"/>
+  <rect x="196" y="236" width="28" height="6" rx="2" fill="#4b87c7"/>
+  <circle cx="218" cy="219" r="1.5" fill="white"/>
+  <circle cx="218" cy="229" r="1.5" fill="white"/>
+  <circle cx="218" cy="239" r="1.5" fill="white"/>
+
+  <text x="210" y="286" text-anchor="middle" font-size="17" font-weight="700" fill="#1e293b">NyxID Master</text>
+  <text x="210" y="312" text-anchor="middle" font-size="11" fill="#64748b">Orchestrates requests</text>
+  <text x="210" y="328" text-anchor="middle" font-size="11" fill="#64748b">and routes them to</text>
+  <text x="210" y="344" text-anchor="middle" font-size="11" fill="#64748b">the user's own node</text>
+
+  <!-- Arrow 1→2 -->
+  <line x1="340" y1="280" x2="400" y2="280" stroke="#4b87c7" stroke-width="2.5" marker-end="url(#arr)"/>
+
+  <!-- Box 2: User's Node -->
+  <rect x="410" y="170" width="260" height="220" rx="16" fill="white" stroke="#e2e8f0" stroke-width="1.5" filter="url(#card)"/>
+
+  <!-- Monitor/computer icon -->
+  <circle cx="540" cy="230" r="32" fill="#d5f0e8"/>
+  <rect x="522" y="214" width="36" height="24" rx="4" fill="none" stroke="#0d9488" stroke-width="2.2"/>
+  <line x1="534" y1="238" x2="546" y2="238" stroke="#0d9488" stroke-width="2.2"/>
+  <line x1="540" y1="238" x2="540" y2="246" stroke="#0d9488" stroke-width="2.2"/>
+
+  <text x="540" y="286" text-anchor="middle" font-size="17" font-weight="700" fill="#1e293b">User's Node</text>
+  <text x="540" y="312" text-anchor="middle" font-size="11" fill="#64748b">Runs on user's own</text>
+  <text x="540" y="328" text-anchor="middle" font-size="11" fill="#64748b">machine — credentials</text>
+  <text x="540" y="344" text-anchor="middle" font-size="11" fill="#64748b">encrypted via OS Keychain</text>
+
+  <!-- OS Keychain badge -->
+  <rect x="490" y="356" width="100" height="20" rx="10" fill="#f0fdf4" stroke="#86efac" stroke-width="1"/>
+  <rect x="502" y="361" width="8" height="7" rx="1.5" fill="#16a34a"/>
+  <path d="M503,361 L503,358 C503,355 508,355 508,358 L508,361" fill="none" stroke="#16a34a" stroke-width="1.4"/>
+  <text x="515" y="370" font-size="8" fill="#166534" font-weight="600">OS Keychain</text>
+
+  <!-- Arrow 2→3 -->
+  <line x1="670" y1="280" x2="730" y2="280" stroke="#4b87c7" stroke-width="2.5" marker-end="url(#arr)"/>
+
+  <!-- Box 3: External API -->
+  <rect x="740" y="170" width="260" height="220" rx="16" fill="white" stroke="#e2e8f0" stroke-width="1.5" filter="url(#card)"/>
+
+  <!-- Cloud icon -->
+  <circle cx="870" cy="230" r="32" fill="#fef3e2"/>
+  <circle cx="862" cy="228" r="12" fill="none" stroke="#d97706" stroke-width="2.2"/>
+  <circle cx="878" cy="224" r="10" fill="none" stroke="#d97706" stroke-width="2.2"/>
+  <rect x="852" y="230" width="36" height="12" rx="6" fill="#fef3e2" stroke="#d97706" stroke-width="2.2"/>
+
+  <text x="870" y="286" text-anchor="middle" font-size="17" font-weight="700" fill="#1e293b">External API</text>
+  <text x="870" y="312" text-anchor="middle" font-size="11" fill="#64748b">Request comes from</text>
+  <text x="870" y="328" text-anchor="middle" font-size="11" fill="#64748b">user's IP, not ours —</text>
+  <text x="870" y="344" text-anchor="middle" font-size="11" fill="#64748b">full privacy preserved</text>
+
+  <!-- ===== BOTTOM CALLOUT ===== -->
+  <rect x="120" y="440" width="840" height="48" rx="12" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="1"/>
+
+  <!-- Lock icon -->
+  <rect x="152" y="456" width="16" height="14" rx="3" fill="#4b87c7"/>
+  <path d="M154,456 L154,450 C154,444 164,444 164,450 L164,456" fill="none" stroke="#4b87c7" stroke-width="2.2"/>
+  <circle cx="160" cy="463" r="2" fill="white"/>
+
+  <text x="182" y="470" font-size="13" fill="#475569" font-weight="500">User's credentials never leave their machine — NyxID orchestrates, the user's node executes</text>
+
+</svg>
