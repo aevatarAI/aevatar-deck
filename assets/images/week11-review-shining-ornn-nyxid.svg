@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 560" font-family="'Segoe UI', 'PingFang SC', sans-serif">
+
+  <defs>
+    <marker id="arr2" viewBox="0 0 8 6" refX="8" refY="3" markerWidth="8" markerHeight="6" orient="auto">
+      <path d="M0,0.5 L7,3 L0,5.5" fill="none" stroke="#6366f1" stroke-width="1.2" stroke-linejoin="round"/>
+    </marker>
+    <marker id="arr-gray" viewBox="0 0 8 6" refX="8" refY="3" markerWidth="8" markerHeight="6" orient="auto">
+      <path d="M0,0.5 L7,3 L0,5.5" fill="none" stroke="#94a3b8" stroke-width="1" stroke-linejoin="round"/>
+    </marker>
+    <filter id="card2" x="-2%" y="-2%" width="104%" height="108%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.06"/>
+    </filter>
+    <linearGradient id="nyxGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4338ca"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Title -->
+  <text x="540" y="32" text-anchor="middle" font-size="16" font-weight="700" fill="#334155">Ornn Platform Onboarding to NyxID</text>
+
+  <!-- ===== NyxID OAuth (center top) ===== -->
+  <rect x="370" y="55" width="340" height="100" rx="16" fill="#0f0e1a" stroke="#6366f1" stroke-width="2" filter="url(#card2)"/>
+  <rect x="370" y="55" width="340" height="6" rx="3" fill="url(#nyxGrad)"/>
+  <text x="540" y="86" text-anchor="middle" font-size="15" font-weight="700" fill="#e0e7ff">NyxID OAuth</text>
+  <text x="540" y="108" text-anchor="middle" font-size="10" fill="#a5b4fc">Login / Logout / Register · Staging verified</text>
+  <text x="540" y="126" text-anchor="middle" font-size="10" fill="#818cf8">End-to-end authentication flow</text>
+
+  <!-- ===== User (left) ===== -->
+  <rect x="30" y="72" width="140" height="66" rx="12" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5" filter="url(#card2)"/>
+  <text x="100" y="98" text-anchor="middle" font-size="12" font-weight="600" fill="#475569">User</text>
+  <text x="100" y="116" text-anchor="middle" font-size="9" fill="#94a3b8">new / returning</text>
+  <path d="M170,105 L370,105" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="5,4" fill="none" marker-end="url(#arr-gray)"/>
+  <text x="270" y="98" text-anchor="middle" font-size="9" fill="#94a3b8" font-weight="500">authenticate</text>
+
+  <!-- Arrows from NyxID down -->
+  <path d="M440,155 L240,210" stroke="#6366f1" stroke-width="1.5" fill="none" marker-end="url(#arr2)"/>
+  <path d="M540,155 L540,210" stroke="#6366f1" stroke-width="1.5" fill="none" marker-end="url(#arr2)"/>
+  <path d="M640,155 L840,210" stroke="#6366f1" stroke-width="1.5" fill="none" marker-end="url(#arr2)"/>
+
+  <!-- ===== Web UI (left) ===== -->
+  <rect x="60" y="220" width="360" height="150" rx="14" fill="white" stroke="#a78bfa" stroke-width="1.5" filter="url(#card2)"/>
+  <rect x="60" y="220" width="360" height="6" rx="3" fill="#8b5cf6"/>
+  <text x="240" y="250" text-anchor="middle" font-size="14" font-weight="700" fill="#7c3aed">Web Interface</text>
+  <text x="240" y="270" text-anchor="middle" font-size="10" fill="#a78bfa">Skill Browsing &amp; Upload Platform</text>
+  <line x1="80" y1="282" x2="400" y2="282" stroke="#ede9fe" stroke-width="1"/>
+
+  <!-- Web UI features -->
+  <rect x="80" y="294" width="150" height="30" rx="8" fill="#f5f3ff" stroke="#ddd6fe" stroke-width="1"/>
+  <text x="155" y="314" text-anchor="middle" font-size="10" fill="#6d28d9" font-weight="500">Skill Browser</text>
+  <rect x="250" y="294" width="150" height="30" rx="8" fill="#f5f3ff" stroke="#ddd6fe" stroke-width="1"/>
+  <text x="325" y="314" text-anchor="middle" font-size="10" fill="#6d28d9" font-weight="500">Skill Upload</text>
+  <text x="240" y="354" text-anchor="middle" font-size="9" fill="#a78bfa">Browse, discover, and upload skills via web UI</text>
+
+  <!-- ===== MCP Tools (center) ===== -->
+  <rect x="360" y="220" width="360" height="150" rx="14" fill="white" stroke="#2dd4bf" stroke-width="1.5" filter="url(#card2)"/>
+  <rect x="360" y="220" width="360" height="6" rx="3" fill="#14b8a6"/>
+  <text x="540" y="250" text-anchor="middle" font-size="14" font-weight="700" fill="#0d9488">Core Skill Service — MCP Tools</text>
+  <text x="540" y="270" text-anchor="middle" font-size="10" fill="#5eead4">Deployed on Nyx Platform</text>
+  <line x1="380" y1="282" x2="700" y2="282" stroke="#ccfbf1" stroke-width="1"/>
+
+  <!-- MCP tool pills -->
+  <rect x="380" y="294" width="100" height="28" rx="8" fill="#f0fdfa" stroke="#99f6e4" stroke-width="1"/>
+  <text x="430" y="313" text-anchor="middle" font-size="9.5" fill="#0f766e" font-weight="600">skill-search</text>
+  <rect x="490" y="294" width="100" height="28" rx="8" fill="#f0fdfa" stroke="#99f6e4" stroke-width="1"/>
+  <text x="540" y="313" text-anchor="middle" font-size="9.5" fill="#0f766e" font-weight="600">skill-upload</text>
+  <rect x="600" y="294" width="100" height="28" rx="8" fill="#f0fdfa" stroke="#99f6e4" stroke-width="1"/>
+  <text x="650" y="313" text-anchor="middle" font-size="9.5" fill="#0f766e" font-weight="600">skill-build</text>
+  <text x="540" y="354" text-anchor="middle" font-size="9" fill="#5eead4">Callable as MCP tools under Nyx platform</text>
+
+  <!-- ===== OpenSandbox (right) ===== -->
+  <rect x="660" y="220" width="380" height="150" rx="14" fill="white" stroke="#fb923c" stroke-width="1.5" filter="url(#card2)"/>
+  <rect x="660" y="220" width="380" height="6" rx="3" fill="#f97316"/>
+  <text x="850" y="250" text-anchor="middle" font-size="14" font-weight="700" fill="#ea580c">OpenSandbox</text>
+  <text x="850" y="270" text-anchor="middle" font-size="10" fill="#fb923c">Script &amp; Program Execution</text>
+  <line x1="680" y1="282" x2="1020" y2="282" stroke="#ffedd5" stroke-width="1"/>
+
+  <rect x="700" y="294" width="60" height="52" rx="8" fill="#fff7ed" stroke="#fed7aa" stroke-width="1"/>
+  <text x="730" y="316" text-anchor="middle" font-size="20">&#x1F4DC;</text>
+  <text x="730" y="338" text-anchor="middle" font-size="8" fill="#c2410c">Scripts</text>
+
+  <rect x="780" y="294" width="60" height="52" rx="8" fill="#fff7ed" stroke="#fed7aa" stroke-width="1"/>
+  <text x="810" y="316" text-anchor="middle" font-size="20">&#x2699;</text>
+  <text x="810" y="338" text-anchor="middle" font-size="8" fill="#c2410c">Programs</text>
+
+  <rect x="860" y="294" width="60" height="52" rx="8" fill="#fff7ed" stroke="#fed7aa" stroke-width="1"/>
+  <text x="890" y="316" text-anchor="middle" font-size="20">&#x1F50D;</text>
+  <text x="890" y="338" text-anchor="middle" font-size="8" fill="#c2410c">Results</text>
+
+  <text x="850" y="362" text-anchor="middle" font-size="9" fill="#fb923c">Executes scripts triggered by skills on staging</text>
+
+  <!-- ===== Data Flow (bottom) ===== -->
+  <rect x="60" y="410" width="980" height="120" rx="16" fill="#fafbff" stroke="#c7d2fe" stroke-width="1.5" stroke-dasharray="6,3" filter="url(#card2)"/>
+  <text x="540" y="440" text-anchor="middle" font-size="13" font-weight="700" fill="#4338ca">End-to-End Skill Lifecycle on Nyx Platform</text>
+
+  <!-- Flow steps -->
+  <rect x="90" y="458" width="160" height="44" rx="10" fill="#ede9fe" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="170" y="477" text-anchor="middle" font-size="10" fill="#6d28d9" font-weight="600">1. Authenticate</text>
+  <text x="170" y="493" text-anchor="middle" font-size="9" fill="#8b5cf6">NyxID OAuth</text>
+
+  <path d="M250,480 L290,480" stroke="#6366f1" stroke-width="1.5" fill="none" marker-end="url(#arr2)"/>
+
+  <rect x="300" y="458" width="160" height="44" rx="10" fill="#f0fdfa" stroke="#99f6e4" stroke-width="1"/>
+  <text x="380" y="477" text-anchor="middle" font-size="10" fill="#0f766e" font-weight="600">2. Browse / Upload</text>
+  <text x="380" y="493" text-anchor="middle" font-size="9" fill="#14b8a6">Web UI + MCP</text>
+
+  <path d="M460,480 L500,480" stroke="#6366f1" stroke-width="1.5" fill="none" marker-end="url(#arr2)"/>
+
+  <rect x="510" y="458" width="160" height="44" rx="10" fill="#f0fdfa" stroke="#99f6e4" stroke-width="1"/>
+  <text x="590" y="477" text-anchor="middle" font-size="10" fill="#0f766e" font-weight="600">3. Build Skill</text>
+  <text x="590" y="493" text-anchor="middle" font-size="9" fill="#14b8a6">skill-build MCP</text>
+
+  <path d="M670,480 L710,480" stroke="#6366f1" stroke-width="1.5" fill="none" marker-end="url(#arr2)"/>
+
+  <rect x="720" y="458" width="180" height="44" rx="10" fill="#fff7ed" stroke="#fed7aa" stroke-width="1"/>
+  <text x="810" y="477" text-anchor="middle" font-size="10" fill="#c2410c" font-weight="600">4. Execute in Sandbox</text>
+  <text x="810" y="493" text-anchor="middle" font-size="9" fill="#f97316">OpenSandbox runtime</text>
+
+</svg>

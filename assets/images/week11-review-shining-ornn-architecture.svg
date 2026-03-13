@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 680" font-family="'Segoe UI', 'PingFang SC', sans-serif">
+
+  <defs>
+    <filter id="card" x="-2%" y="-2%" width="104%" height="108%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000" flood-opacity="0.07"/>
+    </filter>
+    <marker id="arr" viewBox="0 0 10 7" refX="10" refY="3.5" markerWidth="10" markerHeight="7" orient="auto">
+      <path d="M0,0.5 L9,3.5 L0,6.5" fill="none" stroke="#b45309" stroke-width="1.2" stroke-linejoin="round"/>
+    </marker>
+    <marker id="arr-gray" viewBox="0 0 10 7" refX="10" refY="3.5" markerWidth="10" markerHeight="7" orient="auto">
+      <path d="M0,0.5 L9,3.5 L0,6.5" fill="none" stroke="#9ca3af" stroke-width="1" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <!-- ===== CLIENT LAYER ===== -->
+  <rect x="180" y="20" width="720" height="130" rx="16" fill="#fef7ed" stroke="#fed7aa" stroke-width="1.5" filter="url(#card)"/>
+  <text x="540" y="46" text-anchor="middle" font-size="13" font-weight="700" fill="#b45309">Client</text>
+
+  <!-- Web UI - React -->
+  <rect x="210" y="58" width="300" height="76" rx="12" fill="white" stroke="#ea580c" stroke-width="1.5"/>
+  <!-- React logo (simplified atom) -->
+  <ellipse cx="248" cy="96" rx="18" ry="7" fill="none" stroke="#61dafb" stroke-width="1.5" transform="rotate(0,248,96)"/>
+  <ellipse cx="248" cy="96" rx="18" ry="7" fill="none" stroke="#61dafb" stroke-width="1.5" transform="rotate(60,248,96)"/>
+  <ellipse cx="248" cy="96" rx="18" ry="7" fill="none" stroke="#61dafb" stroke-width="1.5" transform="rotate(120,248,96)"/>
+  <circle cx="248" cy="96" r="3" fill="#61dafb"/>
+  <text x="280" y="92" font-size="13" font-weight="700" fill="#1e293b">Web UI</text>
+  <text x="280" y="110" font-size="10" fill="#64748b">React SPA</text>
+
+  <!-- Agent SDK / API Client -->
+  <rect x="570" y="58" width="300" height="76" rx="12" fill="white" stroke="#ea580c" stroke-width="1.5"/>
+  <!-- Terminal icon -->
+  <rect x="598" y="80" width="30" height="22" rx="4" fill="none" stroke="#334155" stroke-width="1.5"/>
+  <text x="604" y="97" font-size="10" fill="#334155" font-family="monospace" font-weight="700">&gt;_</text>
+  <text x="640" y="92" font-size="13" font-weight="700" fill="#1e293b">Agent SDK / API Client</text>
+  <text x="640" y="110" font-size="10" fill="#64748b">MCP Integration</text>
+
+  <!-- ===== ORNN LAYER ===== -->
+  <rect x="180" y="195" width="720" height="150" rx="16" fill="#fef7ed" stroke="#fed7aa" stroke-width="1.5" filter="url(#card)"/>
+  <text x="540" y="221" text-anchor="middle" font-size="13" font-weight="700" fill="#b45309">Ornn</text>
+
+  <!-- ornn-frontend - Vite -->
+  <rect x="210" y="236" width="260" height="90" rx="12" fill="white" stroke="#ea580c" stroke-width="1.5"/>
+  <!-- Vite logo (lightning bolt) -->
+  <polygon points="245,252 237,276 247,274 241,296 257,268 247,270 253,252" fill="#646cff" stroke="#646cff" stroke-width="0.5" stroke-linejoin="round"/>
+  <text x="268" y="272" font-size="13" font-weight="700" fill="#1e293b">ornn-frontend</text>
+  <text x="268" y="290" font-size="10" fill="#64748b">Vite + React</text>
+  <rect x="268" y="298" width="50" height="16" rx="8" fill="#f0fdf4" stroke="#86efac" stroke-width="1"/>
+  <text x="293" y="310" text-anchor="middle" font-size="8" fill="#166534" font-weight="600">LIVE</text>
+
+  <!-- ornn-skill API - Hono -->
+  <rect x="530" y="236" width="340" height="90" rx="12" fill="white" stroke="#ea580c" stroke-width="1.5"/>
+  <!-- Hono logo (flame) -->
+  <path d="M568,294 C568,280 574,268 578,262 C580,266 584,270 584,278 C586,272 588,266 586,258 C594,266 598,278 596,290 C594,296 588,298 584,298 C580,298 574,296 572,292 C570,296 568,294 568,294Z" fill="#ff5b11" stroke="none"/>
+  <text x="608" y="274" font-size="13" font-weight="700" fill="#1e293b">ornn-skill API</text>
+  <text x="608" y="292" font-size="10" fill="#64748b">Hono — Skill CRUD, Search, Build</text>
+  <rect x="608" y="300" width="50" height="16" rx="8" fill="#f0fdf4" stroke="#86efac" stroke-width="1"/>
+  <text x="633" y="312" text-anchor="middle" font-size="8" fill="#166534" font-weight="600">LIVE</text>
+
+  <!-- ===== STORAGE LAYER ===== -->
+  <rect x="60" y="410" width="460" height="130" rx="16" fill="#fef7ed" stroke="#fed7aa" stroke-width="1.5" filter="url(#card)"/>
+  <text x="290" y="436" text-anchor="middle" font-size="13" font-weight="700" fill="#b45309">Storage</text>
+
+  <!-- MongoDB -->
+  <rect x="90" y="450" width="180" height="72" rx="12" fill="white" stroke="#ea580c" stroke-width="1.5"/>
+  <!-- MongoDB leaf -->
+  <path d="M128,462 C128,462 122,474 122,482 C122,490 126,496 130,498 L130,504 L132,504 L132,498 C136,496 140,490 140,482 C140,474 134,462 134,462 C133,461 129,461 128,462Z" fill="#00ed64" stroke="#00684a" stroke-width="0.5"/>
+  <text x="152" y="482" font-size="13" font-weight="700" fill="#1e293b">MongoDB</text>
+  <text x="152" y="500" font-size="10" fill="#64748b">Metadata Store</text>
+
+  <!-- chrono-storage -->
+  <rect x="300" y="450" width="200" height="72" rx="12" fill="white" stroke="#ea580c" stroke-width="1.5"/>
+  <!-- S3 bucket icon -->
+  <rect x="322" y="464" width="24" height="18" rx="3" fill="none" stroke="#ff9900" stroke-width="1.8"/>
+  <path d="M322,470 L346,470" stroke="#ff9900" stroke-width="1.2"/>
+  <ellipse cx="334" cy="464" rx="12" ry="3" fill="none" stroke="#ff9900" stroke-width="1.5"/>
+  <text x="356" y="478" font-size="12" font-weight="700" fill="#1e293b">chrono-storage</text>
+  <text x="356" y="496" font-size="10" fill="#64748b">AWS S3</text>
+  <rect x="420" y="498" width="60" height="16" rx="8" fill="#f0fdf4" stroke="#86efac" stroke-width="1"/>
+  <text x="450" y="510" text-anchor="middle" font-size="8" fill="#166534" font-weight="600">DEPLOYED</text>
+
+  <!-- ===== EXTERNAL LAYER ===== -->
+  <rect x="560" y="410" width="480" height="250" rx="16" fill="#fef7ed" stroke="#fed7aa" stroke-width="1.5" filter="url(#card)"/>
+  <text x="800" y="436" text-anchor="middle" font-size="13" font-weight="700" fill="#b45309">External Services</text>
+
+  <!-- NyxID -->
+  <rect x="590" y="450" width="210" height="82" rx="12" fill="white" stroke="#ea580c" stroke-width="1.5"/>
+  <!-- Shield/lock icon -->
+  <path d="M622,460 L622,486 C622,496 632,502 632,502 C632,502 642,496 642,486 L642,460 L632,456 L622,460Z" fill="none" stroke="#6366f1" stroke-width="1.8"/>
+  <rect x="629" y="472" width="6" height="8" rx="1" fill="#6366f1"/>
+  <circle cx="632" cy="470" r="4" fill="none" stroke="#6366f1" stroke-width="1.5"/>
+  <text x="654" y="478" font-size="12" font-weight="700" fill="#1e293b">NyxID</text>
+  <text x="654" y="496" font-size="10" fill="#64748b">OAuth + Auth</text>
+  <text x="654" y="512" font-size="10" fill="#64748b">LLM Gateway</text>
+  <rect x="720" y="516" width="60" height="16" rx="8" fill="#f0fdf4" stroke="#86efac" stroke-width="1"/>
+  <text x="750" y="528" text-anchor="middle" font-size="8" fill="#166534" font-weight="600">LIVE</text>
+
+  <!-- chrono-sandbox -->
+  <rect x="830" y="450" width="190" height="82" rx="12" fill="white" stroke="#ea580c" stroke-width="1.5"/>
+  <!-- Sandbox/container icon -->
+  <rect x="856" y="464" width="26" height="20" rx="3" fill="none" stroke="#f97316" stroke-width="1.8"/>
+  <line x1="856" y1="472" x2="882" y2="472" stroke="#f97316" stroke-width="1.2"/>
+  <line x1="869" y1="464" x2="869" y2="484" stroke="#f97316" stroke-width="1.2"/>
+  <text x="894" y="478" font-size="12" font-weight="700" fill="#1e293b">chrono-sandbox</text>
+  <text x="894" y="496" font-size="10" fill="#64748b">Script Execution</text>
+  <rect x="894" y="506" width="60" height="16" rx="8" fill="#f0fdf4" stroke="#86efac" stroke-width="1"/>
+  <text x="924" y="518" text-anchor="middle" font-size="8" fill="#166534" font-weight="600">DEPLOYED</text>
+
+  <!-- Nyx Platform (under NyxID) -->
+  <rect x="590" y="556" width="430" height="82" rx="12" fill="white" stroke="#ea580c" stroke-width="1.5"/>
+  <!-- Globe icon for platform -->
+  <circle cx="622" cy="597" r="14" fill="none" stroke="#0ea5e9" stroke-width="1.8"/>
+  <ellipse cx="622" cy="597" rx="6" ry="14" fill="none" stroke="#0ea5e9" stroke-width="1.2"/>
+  <line x1="608" y1="597" x2="636" y2="597" stroke="#0ea5e9" stroke-width="1.2"/>
+  <text x="648" y="590" font-size="12" font-weight="700" fill="#1e293b">Nyx Platform</text>
+  <text x="648" y="608" font-size="10" fill="#64748b">MCP Tools Host — skill-search · skill-upload · skill-build</text>
+  <text x="648" y="624" font-size="10" fill="#64748b">Skills deployed and callable as MCP tools</text>
+
+  <!-- ===== ARROWS ===== -->
+
+  <!-- Web UI → ornn-frontend -->
+  <path d="M360,134 L360,236" stroke="#b45309" stroke-width="1.8" fill="none" marker-end="url(#arr)"/>
+
+  <!-- Agent SDK → ornn-skill API -->
+  <path d="M720,134 L700,236" stroke="#b45309" stroke-width="1.8" fill="none" marker-end="url(#arr)"/>
+
+  <!-- Web UI → ornn-skill API (via frontend) -->
+  <path d="M470,282 L530,282" stroke="#9ca3af" stroke-width="1.2" stroke-dasharray="5,3" fill="none" marker-end="url(#arr-gray)"/>
+
+  <!-- ornn-skill API → MongoDB -->
+  <path d="M620,326 C620,370 280,370 220,450" stroke="#b45309" stroke-width="1.8" fill="none" marker-end="url(#arr)"/>
+
+  <!-- ornn-skill API → chrono-storage -->
+  <path d="M660,326 C660,380 420,380 400,450" stroke="#b45309" stroke-width="1.8" fill="none" marker-end="url(#arr)"/>
+
+  <!-- ornn-skill API → NyxID -->
+  <path d="M740,326 C740,380 700,390 700,450" stroke="#b45309" stroke-width="1.8" fill="none" marker-end="url(#arr)"/>
+
+  <!-- ornn-skill API → chrono-sandbox -->
+  <path d="M800,326 C820,380 900,390 920,450" stroke="#b45309" stroke-width="1.8" fill="none" marker-end="url(#arr)"/>
+
+  <!-- ornn-skill API → Nyx Platform -->
+  <path d="M870,310 C1020,310 1020,580 1020,597" stroke="#9ca3af" stroke-width="1.2" stroke-dasharray="5,3" fill="none"/>
+  <text x="1030" y="460" font-size="9" fill="#9ca3af" transform="rotate(90,1030,460)">MCP publish</text>
+
+</svg>
